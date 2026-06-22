@@ -1,0 +1,11 @@
+pandas
+numpy
+xgboost
+scikit-learn
+matplotlib
+seaborn
+shap
+joblib
+scipy
+mplsoccer==1.5.1
+streamlit
