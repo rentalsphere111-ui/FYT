@@ -1,16 +1,16 @@
-Concept Page
+# Concept Page
 
-Acknowledgement
+# Acknowledgement
 I would like to express my deepest gratitude to my supervisor, Manoj Shrestha, for his invaluable guidance, support, and feedback throughout this research. His expertise in data analytics and set-piece analysis helped shape the direction of this project.
 
 I am also thankful to Softwarica College of IT and E-Commerce, and Coventry University, for providing the academic environment and resources necessary to complete this dissertation. Finally, I would like to thank my family and friends for their continuous encouragement and support.
 
-Abstract
+# Abstract
 This thesis investigates the systematic decline of direct free-kick goals in the English Premier League over the past decade (2014–2024) using a data-driven framework and machine learning. Focusing on how goalkeeper positioning, defensive wall setups (such as wall count, wall jump, and crocodile defenders), and shooting techniques influence shot outcomes, the study evaluates a dataset of 3,657 direct free-kick attempts. The research designs an end-to-end pipeline covering data cleaning, coordinate normalization, spatial visualization (heatmaps and shot target areas), and shot-by-shot probability estimation using an XGBoost classifier optimized for class imbalance. Machine learning explanations are derived using SHAP values to explain how each feature shapes the expected goals (xG) probability. Findings reveal that defensive adaptations—specifically goalkeeper angular positioning and the introduction of jumping walls and crocodile defenders—have significantly suppressed direct free-kick threat, leading to a system-wide decline in direct free-kick goals. Overall, the study demonstrates that AI-powered set-piece analytics offer practical value for coaching staff and tactical defense planning, while validating the models using Welch's T-Test and Chi-Square statistical validation.
 
-Keywords
+# Keywords
 
-Case Study: Brentford FC, FC Midtjylland, and the Set-Piece Analytics Revolution
+# Case Study: Brentford FC, FC Midtjylland, and the Set-Piece Analytics Revolution
 Introduction
 Brentford FC and FC Midtjylland represent the most compelling case studies for examining the broader adoption of data analytics in set-piece design. For many years, set-piece success was widely explained through an intuitive, almost random approach to the game. However, as sport has become more physically demanding and tactically complex, elite clubs have increasingly recognized the need to supplement traditional coaching with objective, data-informed set-piece analysis. This shift should be understood as a gradual adaptation to modern performance environments, where analytics supports decision-making across tactical set-piece preparation, wall count optimization, and shooting accuracy.
 
@@ -29,14 +29,14 @@ A third ethical issue relates to data ownership, governance, and consent, partic
 Reasons for Success and Limitations of the Model
 Brentford's and Midtjylland's set-piece analytics model demonstrates how gridded spatial tracking can optimize shooting routines. Goalkeeper positioning and defensive wall setups produce spatial coordinates whose expected goals (xG) threat depends on both distance and angle. Machine learning models are effective because they exploit these spatial relationships to predict goal probability. Visual analytics help translate these coordinates into intuitive heatmap visualizations. This approach addresses the HCI challenge of making advanced analytics accessible to coaching staff, ensuring that model outputs can be explored, questioned, and contextualized rather than accepted as opaque numerical scores.
 
-Case Study: Rational Choice Theory and Shot-Selection Optimization in the EPL
+# Case Study: Rational Choice Theory and Shot-Selection Optimization in the EPL
 Introduction
 This case study evaluates the behavioral drivers behind the direct free-kick goal decline in the Premier League. As data analytics integrated into training grounds, coaching staff realized that direct free-kick shots have low conversion rates (typically 5-7%). Consequently, teams began optimizing their set-piece decision-making.
 
 The Shift from Shooting to Crossing
 Rational choice theory suggests that players make decisions to maximize expected outcomes. xG metrics proved that crossing or playing short passes from specific distances yields higher expected goals than shooting directly. Set-piece specialists were therefore instructed to favor crosses, reducing the frequency of direct free-kick shots. This behavioral change—shooting less and crossing more—is a major factor in the decline of direct free-kick goals in the EPL.
 
-Introduction 
+# Introduction 
 Football has developed from a sport shaped largely by intuition and tradition into a data -rich 
 environment where granular analysis increasingly informs tactics, tactical set-piece preparation, and performance 
 evaluation. Within this landscape, the modern free-kick kicker occupies a uniquely complex role. Rather 
@@ -478,7 +478,7 @@ for analysis. In the context of this thesis, ethical reflection is not a periphe
 design criterion integrated throughout the development process to ensure responsible inno vation 
 in the sensitive domain of human performance evaluation.
 
-Literature Review  
+# Literature Review  
 Advanced expected goals probability Models: Beyond Expected Goals 
 The introduction of Expected Goals (xG) marked a major advance in evaluating shooting quality, 
 yet it also exposed a structural limitation in performance analysis. By focusing almost 
@@ -553,7 +553,7 @@ metrics are translated into intuitive spatial narratives. This approach addresse
 of making advanced analytics accessible to non -technical users, ensuring that model outputs can 
 be explored, questioned, and contextualized rather than accepted as opaque numerical scores.
 
-Case Study: Brentford FC, FC Midtjylland, and the Set-Piece Analytics Revolution
+# Case Study: Brentford FC, FC Midtjylland, and the Set-Piece Analytics Revolution
 Introduction
 Brentford FC and FC Midtjylland represent the most compelling case studies for examining the broader adoption of data analytics in set-piece design. For many years, set-piece success was widely explained through an intuitive, almost random approach to the game. However, as sport has become more physically demanding and tactically complex, elite clubs have increasingly recognized the need to supplement traditional coaching with objective, data-informed set-piece analysis. This shift should be understood as a gradual adaptation to modern performance environments, where analytics supports decision-making across tactical set-piece preparation, wall count optimization, and shooting accuracy.
 
@@ -711,7 +711,7 @@ lesson is that successful analytics systems are not defined solely by technical 
 transparent assumptions, integration with strategic decision -making, and a consistent re spect for 
 the human element of sport.
 
-Case Study: Tactical Defending Evolution in the EPL: Crocodile Defenders and Wall Jumping Mechanics
+# Case Study: Tactical Defending Evolution in the EPL: Crocodile Defenders and Wall Jumping Mechanics
 Introduction
 Over the 2014-2024 decade, defensive tactics in the English Premier League adapted rapidly to counter direct free-kick kickers. The introduction of coordinated wall jumping and the lying 'crocodile' defender represent key tactical shifts. This case study examines how these defensive structures changed the geometry of direct free-kicks, restricting the shooter's options and contributing to the system-wide decline in direct free-kick goals.
 
@@ -850,7 +850,7 @@ is that the most effective analytical systems are not only technically robust bu
 transparency, clarity, and user comprehension at the core, ensuring that complex data become s 
 reliable decision support rather than misleading certainty.
 
-Case Study: Rational Choice Theory and Shot-Selection Optimization in the EPL
+# Case Study: Rational Choice Theory and Shot-Selection Optimization in the EPL
 Introduction
 This case study evaluates the behavioral drivers behind the direct free-kick goal decline in the Premier League. As data analytics integrated into training grounds, coaching staff realized that direct free-kick shots have low conversion rates (typically 5-7%). Consequently, teams began optimizing their set-piece decision-making.
 
@@ -938,7 +938,7 @@ demonstrates that effective spatial analytics depends not only on technical robu
 thoughtful design and responsible deployment that respect the human realities behind the data. 
 .
 
-Integration of Tools and Technologies  
+# Integration of Tools and Technologies  
 The development of the AI-powered direct free-kick analysis dashboard required the careful and deliberate 
 integration of a suite of computational tools, data platforms, and modeling techniques. These tools 
 did not merely provide the technical infrastructure to proce ss complex spatial and statistical 
@@ -1028,7 +1028,7 @@ and enabling a much deeper and more focused analysis of each chart. This evoluti
 the importance of an iterative approach where user experience and analytical clarity are 
 continuously evaluated and refined.
 
-Findings 
+# Findings 
 How can a specialized analytics dashboard be designed and developed using machine 
 learning (XGBoost classification) and advanced statistical models (Expected Goals, 
 Percentile Ranking) to provide a deep, contextual, and evaluative analysis of an elite 
@@ -1294,7 +1294,7 @@ requires that ethics be embedded at the core of design and interpretation, ensur
 innovation deepens understanding of performance without diminishing the complexity and dignity 
 of the athlete being evaluated.
 
-Conclusion and Future Work 
+# Conclusion and Future Work 
 This study successfully establishes a robust methodology for evaluating elite free-kick kicker 
 performance by integrating advanced machine learning and statistical models into a coherent, end-
 to-end analytical workflow. By synthesizing Expected Goals (xG) for creative valuation, XGBoost 
@@ -1317,7 +1317,7 @@ responsible paradigm in sports analytics, one where data -driven insights are us
 oversimplify the athlete, but to deepen our appreciation of the complex and multi -dimensional 
 nature of elite performance.
 
-Bibliography 
+# Bibliography 
 Andrienko, G., Andrienko, N., Jankun‐Kelly, T., Keim, D., & Kraak, M.-J. (2013). Visual 
 analytics of movement: An overview of methods, tools and practices (Lecture Notes in Computer 
 Science, V ol. 8180). Springer. https://doi.org/10.1007/978-3-642-37583-5 
@@ -1460,16 +1460,16 @@ Zhang, B. H., Lemoine, B., & Mitchell, M. (2018). Mitigating unwanted biases wit
 learning. In Proceedings of the 2018 AAAI/ACM Conference on AI, Ethics, and Society (pp. 335–
 340). https://doi.org/10.1145/3278721.3278779
 
-Appendices 
+# Appendices 
  GitHub: https://github.com/dipen-dra/thesis_final 
 Appendix A: Gantt chart 
  
 Appendix B: Risk Analysis
 
-Appendix C: SWOT Analysis
+## Appendix C: SWOT Analysis
 
-Appendix D: Dashboard Screenshot
+## Appendix D: Dashboard Screenshot
 
-Appendix E: Code Snippets
+## Appendix E: Code Snippets
 
-Appendix E: Ethical Forms
+## Appendix E: Ethical Forms

@@ -1530,21 +1530,18 @@ with tab4:
             with open(thesis_txt_path, "r", encoding="utf-8") as f:
                 thesis_raw = f.read()
             
-            # Split sections based on specific headers
+            # Split sections based on markdown H1 headers (# Heading)
             sections = {}
             current_sec = "Title Page"
             current_content = []
             
             for line in thesis_raw.split("\n"):
                 stripped = line.strip()
-                # Detect major section headers
-                if stripped.startswith("Chapter") or stripped in [
-                    "Concept Page", "Acknowledgement", "Abstract", "Keywords", 
-                    "Table of Contents", "Bibliography", "Appendices"
-                ]:
+                if stripped.startswith("# "):
+                    section_title = stripped.replace("# ", "").strip()
                     if current_content:
                         sections[current_sec] = "\n".join(current_content)
-                    current_sec = stripped
+                    current_sec = section_title
                     current_content = []
                 else:
                     current_content.append(line)
@@ -1560,7 +1557,7 @@ with tab4:
             # Render selected section in a clean container
             st.markdown(f"## {selected_section}")
             st.markdown("---")
-            st.write(sections[selected_section])
+            st.markdown(sections[selected_section])
         else:
             st.error("Dissertation file `thesis_230330.txt` not found in workspace directory.")
         
