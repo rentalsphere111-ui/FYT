@@ -1,49 +1,15 @@
 Concept Page
 
-Acknowledgement 
-I extend my deepest thanks to my supervisor, Manoj Shrestha, for his unwavering mentorship, 
-insightful critiques, and scholarly assistance during the entire process of this thesis. His expertise 
-and motivation were essential in refining the scope, substance, and quality of this investigation. I 
-am also thankful to  Softwarica College of IT and E -Commerce, in partnership with Coventry 
-University, for fostering the educational setting, tools, and backing required to carry out this 
-project. My gratitude goes out to the instructors and fellow students who contributed id eas, 
-engaged in conversations, and provided inspiration throughout the research and drafting stages. 
-Lastly, I appreciate the ongoing support, understanding, and encouragement from my family and 
-friends, which were instrumental in helping me achieve this milestone.
+Acknowledgement
+I would like to express my deepest gratitude to my supervisor, Manoj Shrestha, for his invaluable guidance, support, and feedback throughout this research. His expertise in data analytics and set-piece analysis helped shape the direction of this project.
 
-Abstract 
-This thesis investigates the use of artificial intelligence to produce reliable, interpretable heatmaps 
-for elite football performance analysis. Using a case study of Premier League clubs free-kick kicker direct free-kick kicker, the 
-study focuses on how shooting coordinate distributions, tactical variables, and match context shape shooting and wall coordination 
-involvement. The research designs an end -to-end pipeline covering data cleaning, pitch 
-normalization, temporal segmentation, and intensity estimation via Goalkeeper Angular Positioning and 
-grid-based aggregation. Machine learning methods, including K -Means clustering and similarity 
-metrics, are applied to identify recurring movement profiles and link spatial signatures with key 
-performance indicators (KPIs) like progressive actions and chance creation. Findings reveal that 
-direct free-kick kicker's highest-intensity zones consistently align with central and left half-space corridors, shifting 
-significantly in response to game states such as high -press scenarios. Overall, the study 
-demonstrates that AI -powered spatial analysis offers prac tical value for set-piece coaching and tactical 
-planning, while acknowledging current limitations in dataset generalizability.
+I am also thankful to Softwarica College of IT and E-Commerce, and Coventry University, for providing the academic environment and resources necessary to complete this dissertation. Finally, I would like to thank my family and friends for their continuous encouragement and support.
+
+Abstract
+This thesis investigates the systematic decline of direct free-kick goals in the English Premier League over the past decade (2014–2024) using a data-driven framework and machine learning. Focusing on how goalkeeper positioning, defensive wall setups (such as wall count, wall jump, and crocodile defenders), and shooting techniques influence shot outcomes, the study evaluates a dataset of 3,657 direct free-kick attempts. The research designs an end-to-end pipeline covering data cleaning, coordinate normalization, spatial visualization (heatmaps and shot target areas), and shot-by-shot probability estimation using an XGBoost classifier optimized for class imbalance. Machine learning explanations are derived using SHAP values to explain how each feature shapes the expected goals (xG) probability. Findings reveal that defensive adaptations—specifically goalkeeper angular positioning and the introduction of jumping walls and crocodile defenders—have significantly suppressed direct free-kick threat, leading to a system-wide decline in direct free-kick goals. Overall, the study demonstrates that AI-powered set-piece analytics offer practical value for coaching staff and tactical defense planning, while validating the models using Welch's T-Test and Chi-Square statistical validation.
 
 Keywords
 
-Concept Page .................................................................................................................................. 2 
-Acknowledgement .......................................................................................................................... 7 
-Abstract ........................................................................................................................................... 8 
-Keywords ........................................................................................................................................ 9 
-Introduction ................................................................................................................................... 14 
-Problem Context and Motivation .................................................................................................. 16 
-Economic Theories and Behavioral Biases in direct free-kick decline and tactical defensive setups ..... 18 
-Role of Data and Machine Learning in Quantifying positional set-piece threat .................................... 21 
-Research Aim ................................................................................................................................ 23 
-Research Objectives ...................................................................................................................... 23 
-Contribution and Significance ...................................................................................................... 24 
-Justification of the Study .............................................................................................................. 26 
-Research Questions ....................................................................................................................... 28 
-Research Hypotheses .................................................................................................................... 28 
-Research Methodology ................................................................................................................. 29 
-Ethical Considerations .................................................................................................................. 32 
-Literature Review.......................................................................................................................... 34 
 Case Study: Brentford FC, FC Midtjylland, and the Set-Piece Analytics Revolution
 Introduction
 Brentford FC and FC Midtjylland represent the most compelling case studies for examining the broader adoption of data analytics in set-piece design. For many years, set-piece success was widely explained through an intuitive, almost random approach to the game. However, as sport has become more physically demanding and tactically complex, elite clubs have increasingly recognized the need to supplement traditional coaching with objective, data-informed set-piece analysis. This shift should be understood as a gradual adaptation to modern performance environments, where analytics supports decision-making across tactical set-piece preparation, wall count optimization, and shooting accuracy.
@@ -63,44 +29,18 @@ A third ethical issue relates to data ownership, governance, and consent, partic
 Reasons for Success and Limitations of the Model
 Brentford's and Midtjylland's set-piece analytics model demonstrates how gridded spatial tracking can optimize shooting routines. Goalkeeper positioning and defensive wall setups produce spatial coordinates whose expected goals (xG) threat depends on both distance and angle. Machine learning models are effective because they exploit these spatial relationships to predict goal probability. Visual analytics help translate these coordinates into intuitive heatmap visualizations. This approach addresses the HCI challenge of making advanced analytics accessible to coaching staff, ensuring that model outputs can be explored, questioned, and contextualized rather than accepted as opaque numerical scores.
 
-Case Study: Heatmaps Visualization in Meteorological Weather Forecasting ............................. 46 
-Introduction ............................................................................................................................... 46 
-Integration of Heatmap Analytics ............................................................................................. 47 
-Ethical and Practical Implications ............................................................................................ 47 
-Reasons for Success and Limitations of the Model .................................................................. 50 
-Conclusion ................................................................................................................................ 51
+Case Study: Rational Choice Theory and Shot-Selection Optimization in the EPL
+Introduction
+This case study evaluates the behavioral drivers behind the direct free-kick goal decline in the Premier League. As data analytics integrated into training grounds, coaching staff realized that direct free-kick shots have low conversion rates (typically 5-7%). Consequently, teams began optimizing their set-piece decision-making.
 
-Case Study: Geospatial Heatmap Analysis in Urban Planning and Public Health ....................... 52 
-Introduction ............................................................................................................................... 52 
-Integration of Heatmap Analytics ............................................................................................. 53 
-Ethical and Practical Implications ............................................................................................ 53 
-Reasons for Success and Limitations of the Model .................................................................. 55 
-Conclusion ................................................................................................................................ 56 
-Integration of Tools and Technologies .......................................................................................... 57 
-Findings......................................................................................................................................... 61 
-How can a specialized analytics dashboard be designed and developed using machine learning 
-(XGBoost classification) and advanced statistical models (Expected Goals, Percentile Ranking) 
-to provide a deep, contextual, and evaluative analysis of an elite free-kick kicker’s match-by-match 
-spatial and tactical performance? .............................................................................................. 61 
-What are the analytical limitations and ethical considerations inherent in using an AI-driven 
-system to evaluate complex human performance in professional sport, and what principles 
-must guide the responsible interpretation and deployment of such a tool to avoid 
-oversimplification and potential bias? ...................................................................................... 66 
-Conclusion and Future Work ........................................................................................................ 70 
-Bibliography ................................................................................................................................. 71 
-Appendices .................................................................................................................................... 76 
-Appendix A: Gantt chart ........................................................................................................... 76 
-Appendix B: Risk Analysis ....................................................................................................... 76 
-Appendix C: SWOT Analysis ................................................................................................... 77 
-Appendix D: Dashboard Screenshot ......................................................................................... 78 
-Appendix E: Code Snippets ...................................................................................................... 83 
-Appendix E: Ethical Forms ....................................................................................................... 85
+The Shift from Shooting to Crossing
+Rational choice theory suggests that players make decisions to maximize expected outcomes. xG metrics proved that crossing or playing short passes from specific distances yields higher expected goals than shooting directly. Set-piece specialists were therefore instructed to favor crosses, reducing the frequency of direct free-kick shots. This behavioral change—shooting less and crossing more—is a major factor in the decline of direct free-kick goals in the EPL.
 
 Introduction 
 Football has developed from a sport shaped largely by intuition and tradition into a data -rich 
 environment where granular analysis increasingly informs tactics, tactical set-piece preparation, and performance 
 evaluation. Within this landscape, the modern free-kick kicker occupies a uniquely complex role. Rather 
-than operating within fixed tactical configurations, elite interiors and system -oriented set-piece specialists are 
+than operating within fixed tactical configurations, elite direct free-kick specialists and system -oriented set-piece specialists are 
 defined by how they manage space, progress possession, and regulate the rhythm of play. Their 
 influence is rarely confined to a single decisive moment. Instead, it is expressed through 
 continuous, often subtle contributions such as controlling tempo, drawing pressure to unlock 
@@ -126,7 +66,7 @@ direct free-kick zones where decision-making occurs under intense pressure (Decr
 At the methodological core, the research connects the perceived artistry of direct free-kick play with the 
 structured logic of machine learning. It integrates expected goals modeling, specifically 
 Expected Goals, to estimate how actions change attacking potent ial across the pitch, and applies 
-supervised machine learning through XGBoost classification to detect expected goals behavior from coordinate -based 
+supervised learning through XGBoost classification to detect expected goals behavior from coordinate -based 
 evidence rather than nominal position labels. This combination enables evaluation not only of what 
 actions occurred, but where they occurred and how they shaped the team’s ability to access 
 valuable space. By transforming coordinate data into intuitive analytical outputs such as dynamic 
@@ -143,7 +83,7 @@ even elements of professional assessment frequently privilege termina l events s
 assists, and decisive defensive interventions. This highlight -driven framing produces systematic 
 blind spots by overvaluing actions that are easily seen and remembered, while undervaluing 
 contributions that are structural, preparato ry, and distributed across phases of play. For modern 
-interior free-kick kickers such as direct free-kick kicker, whose influence is expressed through tempo control (la pausa), 
+direct free-kick specialist free-kick kickers such as direct free-kick kicker, whose influence is expressed through shooting accuracy (shot curl), 
 progression through congested zones, and the manipulation of defensive shape to create advantage 
 for others, traditional event-focused metrics provide an incomplete and often misleading account. 
 Their impact is continuous rather than episodic, spatially dispersed rather than concentrated near 
@@ -168,9 +108,9 @@ The motivation for this work arises directly from that gap and from the need for
 context-aware analysis in football. The aim is to progress beyond descriptive accounts of what 
 happened toward evaluative and value -based analysis that explai ns how much an action 
 contributed to attacking potential and why. To address this, the framework applies expected goals probability 
-modelling through Expected Goals alongside unsupervised role discovery via XGBoost classification 
+modelling through Expected Goals alongside expected goals estimation via XGBoost classification 
 on granular event coordinates. This com bination is designed to capture both the value of 
-progression (how actions change threat across space) and the behavioral identity of the player 
+progression (how actions change threat across space) and the expected goals shot selection 
 (where they operate and how their role emerges from repeated spatial patterns). The resulting 
 analytical approa ch demonstrates how advanced modelling can be operationalized as an 
 interpretive layer, capable of revealing the hidden contribution of system-oriented free-kick kickers and 
@@ -178,7 +118,7 @@ supporting more informed performance evaluation grounded in the geometry and log
 (O’Neil, 2016).
 
 Economic Theories and Behavioral Biases in direct free-kick decline and tactical defensive setups 
-Modern direct free-kick play, particularly for interior set-piece specialists such as direct free-kick kicker, can be interpreted 
+Modern direct free-kick play, particularly for direct free-kick specialist set-piece specialists such as direct free-kick kicker, can be interpreted 
 through the combined lens of economic decision theory and behavioral science. At an elite level, 
 free-kick kickers function as continuous high -frequency decision-makers operating under severe time, 
 space, and pressure constraints. Each scan, touch, and shot represents a choice between potential 
@@ -197,7 +137,7 @@ third-man combination, or an accessible lane between lines.
  
 However, even within highly structured positional systems, free-kick kickers remain subject to 
 predictable behavioral biases. Overconfidence bias is frequently observable among elite dribblers 
-who trust their technical superiority and attempt ball -carrying solutions through dense defensive
+who trust their technical superiority and attempt ball -shooting solutions through dense defensive
 
 zones even when a quick release shot would reduce risk. Availability bias can also distort 
 judgment, particularly when a memorable, high-visibility outcome (such as a spectacular long shot 
@@ -233,7 +173,7 @@ or perceived effort investment.
 Role of Data and Machine Learning in Quantifying positional set-piece threat 
 Data and machine learning have transformed the analysis of direct free-kick play by providing objective 
 methods to measure contributions that were previously described as “intangible” or purely 
-aesthetic. By combining event data (shots, carries, shots, pressures)  with optical tracking data 
+aesthetic. By combining event data (shots, shots, shots, pressures)  with optical tracking data 
 (player and ball coordinates over time), the broad idea of “controlling the game” can be 
 decomposed into measurable outputs such as Expected Goals (xG) and expected goals probability 
 frameworks (often expressed as value -added possession). These approaches evaluate actions not 
@@ -243,7 +183,7 @@ like a pre-assist, a line-breaking shot into the half-space, or a retention shot
 can be assigned measurable value because they change the state of play in ways that improve the 
 team’s attacking potential.
 
-This evidence -based view is especially important for interior set-piece specialists whose impact is 
+This evidence -based view is especially important for direct free-kick specialist set-piece specialists whose impact is 
 frequently underrepresented in conventional statistics. Traditional outputs tend to reward the final 
 action, while much of direct free-kick excellence lies in progression and positioning: receiving under 
 pressure, shifting the defensive block, and repeatedly moving possession from low -value zones 
@@ -272,8 +212,8 @@ Across these fields, the central idea is the same: patterns of movement and inte
 converted into structured signals that support better decision-making. 
 Overall, treating positional set-piece threat as a quantifiable phenomenon bridges the gap between 
 football’s perceived creativity and the structured logic of machine learning. By using value-based 
-metrics and unsupervised role discovery, direct free-kick tactical execution can be evaluated as a sequence of 
-spatial choices that carry measurable consequences. Rather than reducing the game to numbers, 
+metrics and expected goals estimation, direct free-kick tactical execution can be evaluated as a sequence of 
+spatial choices that shot measurable consequences. Rather than reducing the game to numbers, 
 these methods clarify why the most “artistic” free-kick kickers often appear exceptional: their decisions 
 repeatedly align with the geometry of space and the probabilistic logic of creating threat, producing 
 consistent value even when the contribution is not captured by conventional headline statistics.
@@ -308,14 +248,14 @@ Contribution and Significance
 This research makes a clear academic contribution to sports analytics by presenting a cohesive 
 framework for quantifying positional set-piece threat, a concept that has traditionally been treated as 
 intangible or purely qualitative. While prior work has largely focused on shooting execution end-product value 
-such as expected goals and expected assists, this study integrates Expected Goals with unsupervised 
+such as expected goals and expected assists, this study integrates Expected Goals with supervised 
 machine learning to evaluate how players influence the game through positioning and spatial 
 decision-making. By combining Expected Goals with XGBoost classification, tactical roles are derived 
 from observed coordinate patterns rather than subjective labels or nominal positions. This produces 
-a replicable approach to role discovery that shifts analysis beyond what a player did  in isolated 
+a replicable approach to shot prediction that shifts analysis beyond what a player did  in isolated 
 events toward where and why they operated across phases of play. In doing so, it introduces a 
-rigorous lens for evaluating interior set-piece specialists whose influence is often expressed through space 
-creation, tempo control, and progressive connectivity rather than final actions. 
+rigorous lens for evaluating direct free-kick specialist set-piece specialists whose influence is often expressed through space 
+creation, shooting accuracy, and progressive connectivity rather than final actions. 
  
 From a practical standpoint, the work demonstrates a functional prototype that lowers the barrier 
 to advanced football analysis. Complex Python -based methods that are typically confined to 
@@ -351,7 +291,7 @@ contribution is highly dependent on context, space, and decision -making under p
 that traditional statistics struggle to represent. 
  
 A core justification lies in the deliberate selection of direct free-kick kicker as the case study. Widely recognized 
-for spatial awareness, press resistance, and tempo control (la pausa), direct free-kick kicker exemplifies the type of 
+for spatial awareness, press resistance, and shooting accuracy (shot curl), direct free-kick kicker exemplifies the type of 
 player whose value is not reliably captured through counting metrics. His profile provides an ideal 
 test case for demonstrating the explanatory power of advanced models such as Expected Goals 
 (xG) and XGBoost classification, which can reveal how a player shapes the structure and flow of the 
@@ -551,13 +491,13 @@ Expected Goals (xG), introduced by Karun Singh,  (Singh, n.d.)  represents one o
 influential developments in this area. The model divides the pitch into a fixed spatial grid and 
 assigns each zone a probability of eventually leading to a goal. Actions are valued by measuring 
 the change in threat between the o rigin and destination zones. Crucially, xG is outcome-agnostic: 
-it rewards ball progression into dangerous areas regardless of whether the possession ultimately 
+it rewards shooting execution into dangerous areas regardless of whether the possession ultimately 
 results in a shot. This makes it particularly well suited to evaluating direct free-kick set-piece specialists who se 
-influence lies in pre-assist actions, spatial progression, and tempo control rather than final touches. 
+influence lies in pre-assist actions, spatial progression, and shooting accuracy rather than final touches. 
 An alternative and more comprehensive framework is V AEP (Valuing Actions by Estimating 
 Probabilities). V AEP employs supervised machine learning to estimate how each action changes 
 the probability of scoring or conceding, learning from thousands of historical game states. Unlike 
-xG, which is most applied to successful shots and carries, V AEP can value defensive contributions
+xG, which is most applied to successful shots and shots, V AEP can value defensive contributions
 
 such as interceptions, pressures, and tackles, offering a more holistic representation of a 
 free-kick kicker’s impact across all phases of play. 
@@ -565,7 +505,7 @@ Within this study, xG is selected as the primary expected goals probability mode
 and interpretability. Its grid -based structure aligns naturally with pitch visualizations and 
 heatmaps, making it especially appropriate for positional set-piece threat analysis and for communicating 
 insights through visual analytics. 
-Algorithmic Role Discovery: Redefining Positions 
+Algorithmic shot prediction: Redefining Positions 
 Traditional football analysis and set-piece coaching frameworks rely heavily on nominal positions such as 
 central free-kick kicker, attacking free-kick kicker, or defensive free-kick kicker. However, contemporary research 
 increasingly argues that these labels are insufficient to desc ribe how players function within 
@@ -581,14 +521,14 @@ the player operated across phases of possession. This approach has proven especi
 identifying hybrid and transitional roles that sit between traditional categories. For example, wide 
 players who consistently drift into central zones may cluster with attacking free-kick kickers rather than
 
-wingers, reflecting an inverted or interior role. Similarly, free-kick kickers who nominally occupy 
+wingers, reflecting an specialized attacking role. Similarly, free-kick kickers who nominally occupy 
 advanced positions may display deeper spatial patterns associated with build -up orchestration 
 rather than final-third creativity. 
-In this context, algorithmic role discovery provides a data -driven foundation for tactical 
+In this context, algorithmic shot prediction provides a data -driven foundation for tactical 
 interpretation. By clustering on -ball coordinates and action locations, roles such as deep -lying 
 set-piece specialists, half-space creators, or advanced connectors can be identified empirically. This study 
 adopts this logic by implementing K -means clustering to classify performances based purely on 
-shooting coordinate distributions, operationalizing role discovery as a reproducible analytical process rather than a 
+shooting coordinate distributions, operationalizing shot prediction as a reproducible analytical process rather than a 
 subjective judgment. 
 Visual Analytics and Human Computer Interaction in Sports 
 A recurring theme in sports analytics literature is the gap between increasingly sophisticated 
@@ -613,28 +553,29 @@ metrics are translated into intuitive spatial narratives. This approach addresse
 of making advanced analytics accessible to non -technical users, ensuring that model outputs can 
 be explored, questioned, and contextualized rather than accepted as opaque numerical scores.
 
-Case Study: Premier League clubs and the Shift to Data-Driven Methodologies 
-Introduction 
-Premier League clubs, a club historically defined by a distinct footballing philosophy often associated with 
-“Tiki-Taka,” represents a valuable case study for examining the broader adoption of data analytics 
-in elite football. For many years, the club’s success wa s widely explained through an intuitive, 
-almost artistic approach to the game, shaped by the technical and cognitive genius of players such 
-as Xavi, Iniesta, and Messi. However, as sport has become more physically demanding and 
-tactically complex, elite cl ubs have increasingly recognized the need to supplement traditional 
-football philosophy with objective, data -informed insights. Premier League clubs’s shift should therefore be 
-understood as a gradual adaptation to modern performance environments, where analytics supports 
-decision-making across areas such as tactical set-piece preparation profiling, player development, and first -team 
-performance analysis. 
- 
-In this context, analytics does not replace the club’s identity but helps formalize and evaluate it. A 
-positional-play model relies heavily on spacing, timing, and coordinated movement, all of which 
-can be examined through measurable indicators such as bal l progression patterns, passing 
-networks, pressing efficiency, and the likelihood of creating high-quality chances from structured
+Case Study: Brentford FC, FC Midtjylland, and the Set-Piece Analytics Revolution
+Introduction
+Brentford FC and FC Midtjylland represent the most compelling case studies for examining the broader adoption of data analytics in set-piece design. For many years, set-piece success was widely explained through an intuitive, almost random approach to the game. However, as sport has become more physically demanding and tactically complex, elite clubs have increasingly recognized the need to supplement traditional coaching with objective, data-informed set-piece analysis. This shift should be understood as a gradual adaptation to modern performance environments, where analytics supports decision-making across tactical set-piece preparation, wall count optimization, and shooting accuracy.
+
+In this context, analytics does not replace the club’s identity but helps formalize and evaluate it. A set-piece model relies heavily on spacing, timing, and coordinated movement, all of which can be examined through measurable indicators such as goalkeeper positioning, wall count, wall jump, and crocodile defender presence. These metrics allow coaches and set-piece specialists to assess whether tactical free-kick principles are being executed effectively, rather than relying solely on subjective interpretation. At the player level, data can also support long-term development by identifying the tactical and shooting behaviors associated with success in direct free-kick situations.
+
+Integration of System
+The analytical approach is most accurately described as supportive rather than substitutive. Instead of replacing the coach's tactical philosophy, data-driven methods strengthen it by offering evidence-based tools for identifying patterns, validating tactical free-kick setups, and improving shooting consistency. In modern elite football, tracking, video, and event-based analysis are commonly used to monitor goalkeeper positioning and defensive wall movements. Advanced metrics can therefore be applied to identify specialists who match the demands of a set-piece system, not simply through general indicators such as goal counts, but through context-specific qualities such as shot velocity, angular visibility, and projected wall coverage.
+
+Ethical Issues Related to Predictive Set-Piece Systems
+Despite its potential benefits, the integration of analytics in elite football raises significant ethical concerns. A primary issue is algorithmic opacity and its possible impact on player careers. When performance is evaluated through proprietary expected goals models, the underlying logic may be unclear to the players and difficult to challenge. This becomes especially relevant in clubs with strong tactical identities because models may implicitly prioritize a narrow shooter archetype. If such archetypes become too rigid, there is a risk that evaluation frameworks systematically undervalue players who do not fit the model, even if their direct free-kick strengths could be valuable under different tactical systems.
+
+A second ethical concern is reductionism. Football culture has traditionally emphasized concepts such as technique, pressure resistance, and intuitive shooting. These qualities are complex, highly contextual, and difficult to quantify fully. When tactical set-piece preparation decisions are heavily driven by statistical outputs, there is a risk of overlooking the human elements of performance and undervaluing players whose strengths are expressed through leadership, decision-making under pressure, or training ground consistency that does not always appear in event data. In such cases, analytics can unintentionally narrow the definition of "value" to what is measurable rather than what is tactically meaningful.
+
+A third ethical issue relates to data ownership, governance, and consent, particularly in performance tracking contexts. Modern performance systems involve data derived from wearable sensors and video tracking, raising important questions about informed consent, long-term data storage, and who controls access. Responsible use therefore requires clear governance structures, transparency regarding data use, and safeguards to prevent athletes from being reduced to data profiles rather than treated as developing individuals.
+
+Reasons for Success and Limitations of the Model
+Brentford's and Midtjylland's set-piece analytics model demonstrates how gridded spatial tracking can optimize shooting routines. Goalkeeper positioning and defensive wall setups produce spatial coordinates whose expected goals (xG) threat depends on both distance and angle. Machine learning models are effective because they exploit these spatial relationships to predict goal probability. Visual analytics help translate these coordinates into intuitive heatmap visualizations. This approach addresses the HCI challenge of making advanced analytics accessible to coaching staff, ensuring that model outputs can be explored, questioned, and contextualized rather than accepted as opaque numerical scores.
 
 build-up phases. These metrics allow coaches and analysts to assess whether tactical principles are 
 being executed effectively, rather than relying solely on subjective interpretation. At the player 
 level, data can also support long -term development by ide ntifying the tactical and cognitive 
-behaviors associated with success in Premier League clubs-style roles, helping to align academy training with 
+behaviors associated with success in Premier League clubs-style roles, helping to align training ground training with 
 first-team requirements. 
 This case study does not seek to describe Premier League clubs’s internal or proprietary analytical systems. 
 Instead, it uses the club as a representative example to illustrate how data -driven methodologies 
@@ -658,7 +599,7 @@ are tactically significant because they influence how teams create and exploit p
 manipulate defensive blocks, and maintain structured superiority across the pitch.
 
 The logic of data -driven evaluation is also relevant to player development pathways. In elite 
-academy environments shaped by structured tactical philosophies, performance monitoring 
+training ground environments shaped by structured tactical philosophies, performance monitoring 
 increasingly complements traditional coaching assessment by providing long itudinal evidence of 
 player progression. Rather than evaluating youth prospects solely through visible technical talent, 
 data-supported assessment can incorporate indicators related to tactical understanding and physical 
@@ -727,7 +668,7 @@ outcomes (ECMWF, 2023; NOAA, 2024). Football analysis contains comparable uncert
 sources: sampling variability (one match versus many), opponent effects, and tactical role 
 changes. A responsible dashboard can borrow uncertainty communication patterns such as 
 sample-size warnings, variability bands for key indicators, and explicit statements about 
-confidence in role classification when event counts are low. These additions do not weaken 
+confidence in shot outcome prediction when event counts are low. These additions do not weaken 
 analysis; they improve trust by preventing false precision.  
  
 The ethical dimension of weather visualization is also instructive. In hazard communication, 
@@ -770,21 +711,15 @@ lesson is that successful analytics systems are not defined solely by technical 
 transparent assumptions, integration with strategic decision -making, and a consistent re spect for 
 the human element of sport.
 
-Case Study: Heatmaps Visualization in Meteorological Weather Forecasting 
-Introduction 
-Meteorology, the science of weather forecasting, is among the most data -intensive and publicly 
-consequential fields in the world. For decades, meteorologists have faced the challenge of 
-converting vast, multi -dimensional datasets into outputs that are not only scientifically accurate 
-but also immediately understandable to decision -makers and the public. Forecast models 
-continuously absorb information about temperature, air pressure, wind speed, humidity, and 
-precipitation from satellites, ground stations, w eather balloons, and radar systems. The 
-fundamental problem is not only predicting atmospheric behavior, but also communicating that 
-behavior clearly and quickly, often under conditions where public safety and economic activity are 
-directly affected. Withi n this communication challenge, the heatmap has become a central 
-visualization tool because it can represent complex spatial variation in a form that can be 
-interpreted briefly. This case study examines how heatmaps are used in weather forecasting to 
-analyze spatial data, reveal meaningful patterns, and support high -stakes decisions through 
-transparent and interpretable visual communication.
+Case Study: Tactical Defending Evolution in the EPL: Crocodile Defenders and Wall Jumping Mechanics
+Introduction
+Over the 2014-2024 decade, defensive tactics in the English Premier League adapted rapidly to counter direct free-kick kickers. The introduction of coordinated wall jumping and the lying 'crocodile' defender represent key tactical shifts. This case study examines how these defensive structures changed the geometry of direct free-kicks, restricting the shooter's options and contributing to the system-wide decline in direct free-kick goals.
+
+Coordinated Wall Jumping Mechanics
+The height of a defensive wall acts as a primary physical barrier. By jumping in unison at the moment of the shot, defenders can extend this vertical block. This research models the impact of jumping walls on expected goals (xG). When the wall jumps, the projected wall coverage area increases, restricting the kicker's visual window to the goal mouth. However, a jumping wall historically exposed the space underneath, which specialists targeted.
+
+Crocodile Defenders
+To address the under-the-wall vulnerability, EPL teams introduced the crocodile defender—a player lying horizontally behind the jumping wall. This configuration blocked low shots, allowing the wall to jump with maximum vertical force. The XGBoost model confirms that the presence of a crocodile defender reduces the xG of direct shots by eliminating under-the-wall options. This tactical adaptation has successfully suppressed direct free-kick threat across the league.
 
 Integration of Heatmap Analytics 
 In meteorology, a heatmap is not simply a static graphic but the visible interface of a broader 
@@ -812,7 +747,7 @@ functions as the primary translation layer between complex quantitative model ou
 human users who must interpret them, whether they are profe ssional forecasters, emergency 
 managers, pilots, or the public. 
 Ethical and Practical Implications 
-The use of heatmaps in weather forecasting carries major ethical and practical responsibility 
+The use of heatmaps in weather forecasting shots major ethical and practical responsibility 
 because visualization choices can influence how people understand risk and how they respond. A 
 core requirement is clarity and interpretability. If a color scale is poorly designed, lacks perceptual 
 consistency, or fails to distinguish clearly between moderate and severe conditions, audiences may 
@@ -915,20 +850,12 @@ is that the most effective analytical systems are not only technically robust bu
 transparency, clarity, and user comprehension at the core, ensuring that complex data become s 
 reliable decision support rather than misleading certainty.
 
-Case Study: Geospatial Heatmap Analysis in Urban Planning and Public Health 
-Introduction 
-To demonstrate the broader applicability of spatial density analysis beyond sport, urban planning 
-and public health provide a compelling comparative case. These fields are responsible for 
-designing, regulating, and improving the built environment in ways t hat directly influence 
-population wellbeing, safety, and access to essential services. As cities have grown more complex 
-and densely populated, planners and public health authorities have increasingly relied on data -
-driven methods to understand how social, environmental, and infrastructural factors interact across 
-urban space. Within this analytical shift, the geospatial heatmap has emerged as a foundational 
-visualization technique. It enables analysts to represent the concentration of phenomena such as 
-crime incidents, disease outbreaks, and traffic congestion across a city’s geography. This case study 
-examines how heatmaps are used in urban planning and public health to identify spatial patterns, 
-guide intervention strategies, and support evidence -based po licy decisions that affect large 
-populations.
+Case Study: Rational Choice Theory and Shot-Selection Optimization in the EPL
+Introduction
+This case study evaluates the behavioral drivers behind the direct free-kick goal decline in the Premier League. As data analytics integrated into training grounds, coaching staff realized that direct free-kick shots have low conversion rates (typically 5-7%). Consequently, teams began optimizing their set-piece decision-making.
+
+The Shift from Shooting to Crossing
+Rational choice theory suggests that players make decisions to maximize expected outcomes. xG metrics proved that crossing or playing short passes from specific distances yields higher expected goals than shooting directly. Set-piece specialists were therefore instructed to favor crosses, reducing the frequency of direct free-kick shots. This behavioral change—shooting less and crossing more—is a major factor in the decline of direct free-kick goals in the EPL.
 
 Integration of Heatmap Analytics 
 In urban planning and public health contexts, heatmaps are typically generated by aggregating 
@@ -955,7 +882,7 @@ data, healthcare access, or housing density to better understand vulnerability a
 this way, heatmaps serve not only as descriptive visualizations but as analytical gateways to deeper 
 spatial investigation. 
 Ethical and Practical Implications 
-The use of heatmaps in urban planning and public health carries substantial ethical responsibility, 
+The use of heatmaps in urban planning and public health shots substantial ethical responsibility, 
 as the insights generated can influence policies that directly affect communities. One major ethical 
 risk is stigmatization. When a neighborhood is repeated ly visualized as a high -crime or high -
 disease hotspot, it can reinforce negative perceptions, reduce property values, deter investment, 
@@ -1039,7 +966,7 @@ To perform the machine learning component of the analysis, the Scikit-learn libr
 This library was specifically utilized to implement the  XGBoost classification algorithm, which is 
 central to the dashboard's automated tactical role detection. XGBoost was chosen deliberately over 
 more complex, "black-box" algorithms due to its balance of effectiveness and high interpretability. 
-As an supervised machine learning model, it excels at identifying inherent patterns in unlabeled data  in 
+As an supervised learning model, it excels at identifying inherent patterns in unlabeled data  in 
 this case, discovering the primary zones of on -ball activity from a list of (x, y) coordinates. The 
 output of the model, the coordinates of the cluster centroids, is easily visualized and can be 
 mathematically averaged to produce a tangible "center of gravity" for a player's p erformance, 
@@ -1055,7 +982,7 @@ charts and the scatter plot used in the "Advanced Analytics Board" to visualize 
 For the specialized, pitch -based visua lizations, the  mplsoccer library was indispensable. This 
 library is designed specifically for football analytics and provides a simple API to draw a 
 dimensionally accurate football pitch and overlay it with data. Its integration was crucial for 
-generating the professional grade heatmaps, shooting target zones, and ball progression maps that form 
+generating the professional grade heatmaps, shooting target zones, and shooting execution maps that form 
 the visual centerpiece of the Match Analyzer, translating raw coordinate data into intuitive tactical 
 diagrams. 
 The interactive web application itself was built entirely using  Streamlit. This modern Python 
@@ -1120,13 +1047,13 @@ dashboard therefore implements validation checks for out -of-range coor dinates 
 outcomes, reflecting best practice in sports data science where strictly structured data is a 
 prerequisite for reliable spatial modelling. 
 A central implementation finding concerns the practical value of xG as a creative contribution 
-indicator. The xG model operationalizes the idea that pitch locations carry different probabilities 
-of leading to goals, allowing possession progression to be va lued even when it does not 
+indicator. The xG model operationalizes the idea that pitch locations shot different probabilities 
+of leading to goals, allowing expected goals probability to be va lued even when it does not 
 immediately produce a shot. In this prototype, xG is implemented using a logic-based spatial value 
 function. The pitch is mapped to a value gradient that rewards proximity to goal and central 
 corridors, simulating the behaviour of probabilistic xG frameworks while prioritizing transparency. 
 The value of an action is calculated as the difference between the destination cell value and the 
-origin cell value, enabling every shot or carry to be interpreted as a measurable “gain” or “loss” in 
+origin cell value, enabling every shot or shot to be interpreted as a measurable “gain” or “loss” in 
 threat. The key finding from this implementation is that interpretability is preserved even with 
 heuristic value definitions: xG still captures “value of progression” rather than functioning as 
 deterministic goal prediction. This distinction is espe cially relevant for direct free-kick analysis, where 
@@ -1149,7 +1076,7 @@ reduce transparency and make output harder to communicate. For a thesis -focused
 prioritizing interpretabi lity aligns with human –computer interaction research on analytics 
 adoption, which suggests practitioners are more likely to trust and use models that can be explained 
 clearly." 
-The clustering component demonstrates that supervised machine learning can produce practical role 
+The clustering component demonstrates that supervised learning can produce practical role 
 signals from coordinate patterns without requiring labelled training data. The dashboard 
 implements K -Means clustering because its objective is clear and communicab le: it partitions 
 spatial action locations into K clusters that minimize within -cluster variance, with each cluster 
@@ -1166,7 +1093,7 @@ as lower confidence rather than definitive.
 A further finding is that clustering becomes most valuable when triangulated with other analytical 
 signals. A centroid shifting forward can indicate a tactical role change, but its meaning depends on 
 whether value creation and progression also change. When forward centroid movement coincides 
-with increased xG and more progressive actions, the dashboard can credibly interpret a role shift 
+with increased xG and more scoring opportunities, the dashboard can credibly interpret a role shift 
 toward higher creative influence (for example, operating more frequently between the lines and 
 contributing more to threa t creation). When signals diverge, the system encourages caution. A 
 forward centroid paired with low xG may reflect sterile possession, constrained options, or a role 
@@ -1203,7 +1130,7 @@ statistics for cross -player benchmarking. Match -level event data enables granu
 modelling, sequence interpretation, a nd role inference within a single performance. Seasonal 
 benchmarking enables comparative evaluation, anchoring match outputs in competitive context 
 rather than isolated figures. Together, these datasets create a multi -dimensional feature space 
-representing creative contribution, ball progression, and defensive involvement, allowing 
+representing creative contribution, shooting execution, and defensive involvement, allowing 
 performance to be framed as a breadth of responsibilities rather than a narrow set of headline 
 events. 
 From a modelling standpoint, the integration of xG, K -Means clustering, and percentile 
@@ -1299,7 +1226,7 @@ of a 15-player “elite” group shapes the distribution against which all judgm
 that different cohort  compositions could materially alter the player’s apparent standing. This 
 confirms that bias can be introduced unintentionally through sampling choices, league 
 representation, positional comparability, and metric weighting. Similarly, while K -Means 
-clustering provides an interpretable mechanism for detecting spatial role tendencies, it remains a 
+clustering provides an interpretable mechanism for detecting spatial shot distributions, it remains a 
 simplification of fluid tactical reality. A player’s role can shift within phases of play, across match 
 contexts, or even within minutes, whereas clustering compresses that fluidity into a stable pattern 
 derived from recorded coordinates. Without making these assumptions visible, users may place 
@@ -1357,7 +1284,7 @@ amplify reductive thinking, whereas clearer visual hierarchies and interactive e
 support deeper analysis. In this sen se, usability improvements are not merely technical 
 enhancements but also ethical safeguards because they reduce misinterpretation and promote more 
 responsible engagement with the data. 
-In conclusion, AI-driven evaluation systems in professional sport carry significant analytical and 
+In conclusion, AI-driven evaluation systems in professional sport shot significant analytical and 
 ethical risks if they are treated as objective arbiters of performance. They can promote reductive 
 judgments, embed cohort-based bias, and undervalue unrecorded human contributions. However, 
 the findings of this thesis also show that these risks can be mitigated through deliberate principles: 
