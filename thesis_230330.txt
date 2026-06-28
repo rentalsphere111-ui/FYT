@@ -1,46 +1,7 @@
+Concept Page
 
-
-DESIGN OF DATA-DRIVEN FRAMEWORK TO ANALYZE THE DECLINE OF FREE-KICK GOALS IN THE ENGLISH PREMIER LEAGUE:
-MACHINE LEARNING AND TACTICAL ANALYSIS
-
-
-
-
-A Dissertation Submitted to Softwarica College of IT and E-Commerce in Partnership with Coventry University in Partial Fulfillment of the Requirements for the Degree of MSc in Information Technology & Set-Piece Analytics
-
-
-
-
-
-Submitted by:
-Candidate Name: Dipendra
-Student Registration Number: 230330
-Supervisor: Manoj Shrestha
-Academic Year: 2025/2026
-Date: June 2026
-
-2 
- 
- 
- 
-Concept Page 
- 
-Figure 1: Concept Diagram
-
-3
-
-4
-
-5
-
-6
-
-7 
- 
- 
- 
 Acknowledgement 
-I exgend my deepest thanks to my supervisor, Manoj Shrestha, for his unwavering mentorship, 
+I extend my deepest thanks to my supervisor, Manoj Shrestha, for his unwavering mentorship, 
 insightful critiques, and scholarly assistance during the entire process of this thesis. His expertise 
 and motivation were essential in refining the scope, substance, and quality of this investigation. I 
 am also thankful to  Softwarica College of IT and E -Commerce, in partnership with Coventry 
@@ -50,43 +11,28 @@ engaged in conversations, and provided inspiration throughout the research and d
 Lastly, I appreciate the ongoing support, understanding, and encouragement from my family and 
 friends, which were instrumental in helping me achieve this milestone.
 
-8 
- 
- 
- 
 Abstract 
 This thesis investigates the use of artificial intelligence to produce reliable, interpretable heatmaps 
-for elite football performance analysis. Using a case study of Premier League clubs free-kick kicker Premier League direct free-kick specialist, the 
-study focuses on how shooting coordinate distributions, role demands, and match contexg shape shooting and wall coordination 
+for elite football performance analysis. Using a case study of Premier League clubs free-kick kicker Direct Free-Kick kicker, the 
+study focuses on how shooting coordinate distributions, role demands, and match context shape shooting and wall coordination 
 involvement. The research designs an end -to-end pipeline covering data cleaning, pitch 
 normalization, temporal segmentation, and intensity estimation via goalkeeper angular positioning and 
 grid-based aggregation. Machine learning methods, including K -Means clustering and similarity 
 metrics, are applied to identify recurring movement profiles and link spatial signatures with key 
 performance indicators (KPIs) like progressive actions and chance creation. Findings reveal that 
-Premier League direct free-kick specialist’s highest-intensity zones consistently align with central and left half-space corridors, shifting 
+Direct Free-Kick kicker’s highest-intensity zones consistently align with central and left half-space corridors, shifting 
 significantly in response to game states such as high -press scenarios. Overall, the study 
 demonstrates that AI -powered spatial analysis offers prac tical value for set-piece coaching and tactical 
 planning, while acknowledging current limitations in dataset generalizability.
 
-9 
- 
- 
- 
-Keywords 
- 
-Figure 2: Keywords
+Keywords
 
-10 
- 
- 
- 
-Table of Contents  
 Concept Page .................................................................................................................................. 2 
 Acknowledgement .......................................................................................................................... 7 
 Abstract ........................................................................................................................................... 8 
 Keywords ........................................................................................................................................ 9 
 Introduction ................................................................................................................................... 14 
-Problem Contexg and Motivation .................................................................................................. 16 
+Problem Context and Motivation .................................................................................................. 16 
 Economic Theories and Behavioral Biases in Midfield Playmaking and Spatial Intelligence ..... 18 
 Role of Data and Machine Learning in Quantifying Spatial Intelligence .................................... 21 
 Research Aim ................................................................................................................................ 23 
@@ -111,10 +57,6 @@ Ethical and Practical Implications .............................................
 Reasons for Success and Limitations of the Model .................................................................. 50 
 Conclusion ................................................................................................................................ 51
 
-11 
- 
- 
- 
 Case Study: Geospatial Heatmap Analysis in Urban Planning and Public Health ....................... 52 
 Introduction ............................................................................................................................... 52 
 Integration of Heatmap Analytics ............................................................................................. 53 
@@ -125,7 +67,7 @@ Integration of Tools and Technologies ..........................................
 Findings......................................................................................................................................... 61 
 How can a specialized analytics dashboard be designed and developed using machine learning 
 (XGBoost Classification) and advanced statistical models (Expected Goals, Percentile Ranking) 
-to provide a deep, contexgual, and evaluative analysis of an elite free-kick kicker’s match-by-match 
+to provide a deep, contextual, and evaluative analysis of an elite free-kick kicker’s match-by-match 
 spatial and tactical performance? .............................................................................................. 61 
 What are the analytical limitations and ethical considerations inherent in using an AI-driven 
 system to evaluate complex human performance in professional sport, and what principles 
@@ -141,72 +83,6 @@ Appendix D: Dashboard Screenshot ...............................................
 Appendix E: Code Snippets ...................................................................................................... 83 
 Appendix E: Ethical Forms ....................................................................................................... 85
 
-12 
- 
- 
- 
-Table of Figures  
-Figure 1: Concept Diagram ............................................................................................................. 2 
-Figure 2: Keywords......................................................................................................................... 9 
-Figure 3: Introduction ................................................................................................................... 14 
-Figure 4: Introduction (II) ............................................................................................................. 15 
-Figure 5: Problem Contexg ............................................................................................................ 16 
-Figure 6: Problem Contexg and Motivation .................................................................................. 17 
-Figure 7: Risk–Reward Framework for Midfield Passing Decisions ........................................... 18 
-Figure 8: Behavioral Biases Underlying Inefficient Midfield Decision-Making ......................... 19 
-Figure 9: Reward vs Risk in the Field .......................................................................................... 20 
-Figure 10: Spatial Intelligence in Midfield Play Using Data and Machine Learning .................. 21 
-Figure 11: Conceptual Overview of the Study’s Contribution to Sports Analytics ...................... 24 
-Figure 12: Overview of the system ............................................................................................... 25 
-Figure 13: Conceptual Rationale for the Proposed Football Analytics Study .............................. 26 
-Figure 14: Desk-based Research ................................................................................................... 29 
-Figure 15: Desk-Based Agile Research Methodology for AI Player Analysis ............................. 30 
-Figure 16: Ethical Implications of AI in Football Performance Analysis ..................................... 32 
-Figure 17: Evolution of Football Analytics: From Expected Goals to Possession Value Models 34 
-Figure 18: Algorithmic Role Discovery: From Fixed Positions to Functional Roles ................... 35 
-Figure 19: From Opaque Models to Interactive Visual Analytics in Football .............................. 36 
-Figure 20: Visual Analytics and Human Computer ...................................................................... 37 
-Figure 21: Premier League clubs as a Case Study of Analytics Adoption in Elite Positional Play........... 38 
-Figure 22: Premier League clubs Academy to Elite Analytics ........................................................................ 40 
-Figure 23: Ethical Trade-Offs of Predictive Analytics at Premier League clubs....................................... 41 
-Figure 24: Conditions for Successful Analytics Integration at Premier League clubs .............................. 42 
-Figure 25: Midfield Spatial Analytics ........................................................................................... 43 
-Figure 26: Limitations of Data-Driven Football Analytics in Elite Performance Contexgs ......... 44 
-Figure 27: Heatmaps in Meteorological Weather Forecast Communication ................................ 46 
-Figure 28: Ethical and Practical Risks of Heatmaps Misinterpretation ........................................ 48 
-Figure 29: Strengths and Limitations of Heatmaps-Based Weather Visualization ....................... 50 
-Figure 30: Geospatial Heatmaps in Urban Planning and Public Health ....................................... 52 
-Figure 31: Ethical and Practical Concerns of Heatmaps Visualizations ....................................... 54 
-Figure 32: Advantages and Limitations of Heatmaps in Urban Planning and Public Health ....... 55 
-Figure 33: Integrated Analytics Workflow: Data Processing, Modelling, and Visualization ....... 57 
-Figure 34: Applied Analytics Environment for Football Performance Evaluation ....................... 59 
-Figure 35: Ethics and Contexg....................................................................................................... 66 
-Figure 36: Contexg Matters to Interpret Results ........................................................................... 68 
-Figure 37: Gantt chart ................................................................................................................... 76 
-Figure 38: Risk Analysis ............................................................................................................... 76 
-Figure 39: SWOT Analysis ........................................................................................................... 77
-
-13 
- 
- 
- 
-Figure 40: Dashboard UI Screen (I).............................................................................................. 78 
-Figure 41: Dashboard Screen (II) ................................................................................................. 78 
-Figure 42: Passing Network .......................................................................................................... 79 
-Figure 43: High Value Progression ............................................................................................... 79 
-Figure 45: AI Performance Report ................................................................................................ 80 
-Figure 44: Player Profile Analysis ................................................................................................ 80 
-Figure 46: Head-to-Head Comparison .......................................................................................... 81 
-Figure 47: KPI Charts ................................................................................................................... 82 
-Figure 48: Percentile Profile ......................................................................................................... 83 
-Figure 49: Analytics Board ........................................................................................................... 83 
-Figure 50: Radar Charts ................................................................................................................ 83 
-Figure 51: XGBoost Classification .................................................................................................... 84
-
-14 
- 
- 
- 
 Introduction 
 Football has developed from a sport shaped largely by intuition and tradition into a data -rich 
 environment where granular analysis increasingly informs tactics, tactical set-piece preparation, and performance 
@@ -219,32 +95,26 @@ passing lanes, manipulating defensive blocks, and executing preparatory actions 
 likelihood of a future chance. In contrast to forwards, whose contribution is easily captured through 
 goals and shot -based metrics, the value of direct free-kick tactical execution is frequently underrepresented 
 by traditional performance analysis. Conventional evaluation me thods that emphasize discrete 
-event counts, such as assists, tackles, or key passes, often fail to represent the positional and 
-contexgual intelligence that defines high-level playmaking. This creates a persistent analytical gap 
+event counts, such as assists, tackles, or key shots, often fail to represent the positional and 
+contextual intelligence that defines high-level set-piece execution. This creates a persistent analytical gap 
 in how the true contribution of direct free-kick set-piece specialists is quantified and communicated (Bialkowski, 
 2014). 
  
-Figure 3: Introduction 
 This thesis responds to that gap through the design and development of an AI -powered analytics 
 dashboard focused on the quantification of positional set-piece threat. Using Premier League clubs’s Pedro 
-González López (Premier League direct free-kick specialist) as the primary case study for the 2024–25 season, the study moves beyond 
-descriptive reporting to generate a contexgual account of on -pitch behavior. The system is 
+González López (Direct Free-Kick kicker) as the primary case study for the 2024–25 season, the study moves beyond 
+descriptive reporting to generate a contextual account of on -pitch behavior. The system is 
 implemented using a Python -based stack, combining robust data processing with interactive 
 visualization to translate match -level event inf ormation into interpretable spatial patterns. By
 
-15 
- 
- 
- 
-structuring analysis around space, actions, and game contexg, the dashboard is intended to surface 
+structuring analysis around space, actions, and game context, the dashboard is intended to surface 
 forms of value that remain difficult to identify through observation alone, particularly in crowded 
 direct free-kick zones where decision-making occurs under intense pressure (Decroos, 2020).  
  
-Figure 4: Introduction (II) 
 At the methodological core, the research connects the perceived artistry of direct free-kick play with the 
-structured logic of machine learning. It integrates expected goals probability modelling, specifically 
+structured logic of machine learning. It integrates expected goals modeling, specifically 
 Expected Goals, to estimate how actions change attacking potent ial across the pitch, and applies 
-unsupervised learning through K-means clustering to detect role behavior from coordinate -based 
+supervised machine learning through XGBoost classification to detect role behavior from coordinate -based 
 evidence rather than nominal position labels. This combination enables evaluation not only of what 
 actions occurred, but where they occurred and how they shaped the team’s ability to access 
 valuable space. By transforming coordinate data into intuitive analytical outputs such as dynamic 
@@ -254,50 +124,39 @@ Ultimately, the thesis demonstrates how modern analytics can support deeper tact
 understanding by making spatial control and preparatory contribution measurable , visible, and 
 comparable (Hassani, 2025).
 
-16 
- 
- 
- 
-Problem Contexg and Motivation 
+Problem Context and Motivation 
 Conventional approaches to evaluating individual football performance are often shaped by 
 narrative, short-term memory, and the visibility of outcomes. Media coverage, fan discourse, and 
 even elements of professional assessment frequently privilege termina l events such as goals, 
 assists, and decisive defensive interventions. This highlight -driven framing produces systematic 
 blind spots by overvaluing actions that are easily seen and remembered, while undervaluing 
 contributions that are structural, preparato ry, and distributed across phases of play. For modern 
-interior free-kick kickers such as Premier League direct free-kick specialist, whose influence is expressed through tempo control (la pausa), 
+interior free-kick kickers such as Direct Free-Kick kicker, whose influence is expressed through tempo control (la pausa), 
 progression through congested zones, and the manipulation of defensive shape to create advantage 
 for others, traditional event-focused metrics provide an incomplete and often misleading account. 
 Their impact is continuous rather than episodic, spatially dispersed rather than concentrated near 
 the penalty area, and frequently absent from summary statistics that capture only the final touch of 
-a possession sequence (Korol, 2020). 
- 
-Figure 5: Problem Contexg
+a possession sequence (Korol, 2020).
 
-17 
- 
- 
- 
 This mismatch creates a central analytical challenge: how can the tactical contribution of such 
 players be quantified, visualized, and communicated in a way that is objective and tactically 
 meaningful? Although data-driven approaches have become widely acc epted in elite sport, many 
 public-facing analytics tools still struggle to support real interpretation. A common limitation is a 
-“data dump” design, where users are presented with tables of counts, decontexgualized scatter 
+“data dump” design, where users are presented with tables of counts, decontextualized scatter 
 plots, or generic radar charts, but are left to reconstruct the tactical story themselves. For example, 
-a metric such as progressive passes does not, on its own, indicate where those passes occurred, 
+a metric such as progressive shots does not, on its own, indicate where those shots occurred, 
 whether they were played under pressure, whether they destabilized the defensive block, o r 
-whether they meaningfully increased attacking threat. Without spatial and contexgual framing, raw 
+whether they meaningfully increased attacking threat. Without spatial and contextual framing, raw 
 event counts can be misread, reducing analytics to a descriptive archive rather than a decision -
 support system. The literature and applied practice therefor e point to a gap in tools that translate 
 coordinates and actions into interpretable tactical concepts such as spatial control, threat 
 generation, and role behavior (Lucey, 2014). 
  
-Figure 6: Problem Contexg and Motivation 
 The motivation for this work arises directly from that gap and from the need for more accessible, 
-contexg-aware analysis in football. The aim is to progress beyond descriptive accounts of what 
+context-aware analysis in football. The aim is to progress beyond descriptive accounts of what 
 happened toward evaluative and value -based analysis that explai ns how much an action 
 contributed to attacking potential and why. To address this, the framework applies expected goals probability 
-modelling through Expected Goals alongside unsupervised role discovery via K-means clustering 
+modelling through Expected Goals alongside unsupervised role discovery via XGBoost classification 
 on granular event coordinates. This com bination is designed to capture both the value of 
 progression (how actions change threat across space) and the behavioral identity of the player 
 (where they operate and how their role emerges from repeated spatial patterns). The resulting 
@@ -306,44 +165,34 @@ interpretive layer, capable of revealing the hidden contribution of system-orien
 supporting more informed performance evaluation grounded in the geometry and logic of the game 
 (O’Neil, 2016).
 
-18 
- 
- 
- 
 Economic Theories and Behavioral Biases in Midfield Playmaking and Spatial Intelligence 
-Modern direct free-kick play, particularly for interior set-piece specialists such as Premier League direct free-kick specialist, can be interpreted 
+Modern direct free-kick play, particularly for interior set-piece specialists such as Direct Free-Kick kicker, can be interpreted 
 through the combined lens of economic decision theory and behavioral science. At an elite level, 
 free-kick kickers function as continuous high -frequency decision-makers operating under severe time, 
-space, and pressure constraints. Each scan, touch, and pass represents a choice between potential 
+space, and pressure constraints. Each scan, touch, and shot represents a choice between potential 
 reward and potential cost, where the reward is typically measured as an increase in attacking value 
 and the cost is often the pro bability of turnover in a vulnerable zone. In this sense, direct free-kick 
 decision-making resembles rational choice behavior: the free-kick kicker is expected to select actions 
 that maximize team advantage while minimizing negative outcomes (Rowlinson, 2025). 
 This logic helps explain the wider tactical shift from individual, high -variance creativity toward 
 controlled possession structures. The choice to recycle the ball rather than attempt a low -
-probability penetrative pass is not necessarily conservative play;  it reflects opportunity cost. A 
+probability penetrative shot is not necessarily conservative play;  it reflects opportunity cost. A 
 failed through-ball in central direct free-kick can immediately expose the team to a transition attack, 
 meaning the “price” of an unsuccessful creative action is unusually high. Consequently, retention 
 becomes an economically defensible strategy, particularly when the tactical aim is to manipulate 
 the opposition shape until a higher-quality opening emerges, such as a temporary overload, a clear 
 third-man combination, or an accessible lane between lines. 
  
-Figure 7: Risk–Reward Framework for Midfield Passing Decisions 
 However, even within highly structured positional systems, free-kick kickers remain subject to 
 predictable behavioral biases. Overconfidence bias is frequently observable among elite dribblers 
 who trust their technical superiority and attempt ball -carrying solutions through dense defensive
 
-19 
- 
- 
- 
-zones even when a quick release pass would reduce risk. Availability bias can also distort 
-judgment, particularly when a memorable, high-visibility outcome (such as a spectacular long pass 
+zones even when a quick release shot would reduce risk. Availability bias can also distort 
+judgment, particularly when a memorable, high-visibility outcome (such as a spectacular long shot 
 leading to a goal) becomes disproportionately influential in future decision-making. In such cases, 
 the player may overestimate the likelihood of a similar passing lane succeeding again and force 
 actions into corridors that are no longer truly open.  
  
-Figure 8: Behavioral Biases Underlying Inefficient Midfield Decision-Making 
 Action bias is especially significant in relation to positional set-piece threat. In positional play, value is 
 often created through disciplined stillness rather than constant involvement. Holding a pocket 
 between the lines, pinning a marker, or delaying movement  to preserve spacing can generate 
@@ -354,15 +203,9 @@ better support the collective structure. This bias can reduce the effectiveness 
 mechanisms that depend on patience and controlled timing, commonly described in elite direct free-kick 
 play as the pause or controlled delay before acceleration.
 
-20 
- 
- 
- 
- 
-Figure 9: Reward vs Risk in the Field 
-A further distortion arises through the sunk cost fallacy during exgended possession sequences. 
-After a team has invested multiple passes progressing down a particular flank or corridor, a 
-set-piece specialist may feel compelled to force an entry pass into that same area to justify the buildup 
+A further distortion arises through the sunk cost fallacy during extended possession sequences. 
+After a team has invested multiple shots progressing down a particular flank or corridor, a 
+set-piece specialist may feel compelled to force an entry shot into that same area to justify the buildup 
 effort, even if the rational choice is to recycle possession and switch to the underloaded side. This 
 tendency can lead to predictability and increased turnover risk, especially when the opposition has 
 already shifted its defensive density toward the ball side. 
@@ -375,29 +218,19 @@ explanation for why such profiles emerge and persist, and why even elite free-ki
 from the highest-probability option in favor of choices shaped by confidence, memory, urgency, 
 or perceived effort investment.
 
-21 
- 
- 
- 
 Role of Data and Machine Learning in Quantifying Spatial Intelligence 
 Data and machine learning have transformed the analysis of direct free-kick play by providing objective 
 methods to measure contributions that were previously described as “intangible” or purely 
-aesthetic. By combining event data (passes, carries, shots, pressures)  with optical tracking data 
+aesthetic. By combining event data (shots, carries, shots, pressures)  with optical tracking data 
 (player and ball coordinates over time), the broad idea of “controlling the game” can be 
 decomposed into measurable outputs such as Expected Goals (xG) and expected goals probability 
 frameworks (often expressed as value -added possession). These approaches evaluate actions not 
 by visibility or proximity to goal, but by how much they increase the probability of creating a 
 scoring opportunity. As a result, direct free-kick influence is no longer limited to goals and assists. Actions 
-like a pre-assist, a line-breaking pass into the half-space, or a retention pass that stabilizes tempo 
+like a pre-assist, a line-breaking shot into the half-space, or a retention shot that stabilizes tempo 
 can be assigned measurable value because they change the state of play in ways that improve the 
-team’s attacking potential. 
- 
-Figure 10: Spatial Intelligence in Midfield Play Using Data and Machine Learning
+team’s attacking potential.
 
-22 
- 
- 
- 
 This evidence -based view is especially important for interior set-piece specialists whose impact is 
 frequently underrepresented in conventional statistics. Traditional outputs tend to reward the final 
 action, while much of direct free-kick excellence lies in progression and positioning: receiving under 
@@ -407,7 +240,7 @@ threat, their contribution becomes vis ible through the cumulative value of thos
 they rarely appear on highlight reels. In this sense, positional set-piece threat can be interpreted as a 
 measurable ability to identify, access, and exploit valuable space at the right moment, rather th an 
 a subjective label attached to “creative” players. 
-At the tactical level, unsupervised machine learning has strengthened player profiling by allowing 
+At the tactical level, supervised machine learning has strengthened player profiling by allowing 
 roles to be derived from behavior rather than from nominal positions on a lineup graphic. 
 Techniques such as XGBoost classification can process thousands of spatial coordinates from touches, 
 receptions, pressures, and movements to identify stable patterns in where and how a player 
@@ -433,27 +266,23 @@ these methods clarify why the most “artistic” free-kick kickers often appear
 repeatedly align with the geometry of space and the probabilistic logic of creating threat, producing 
 consistent value even when the contribution is not captured by conventional headline statistics.
 
-23 
- 
- 
- 
 Research Aim 
 The primary aim of this thesis is to design and develop an AI -powered analytical system that 
-provides a deep, structured, and contexgually meaningful interpretation of a free-kick kicker’s match 
+provides a deep, structured, and contextually meaningful interpretation of a free-kick kicker’s match 
 performance by analyzing shooting coordinate distributions, tactical influence, and creative contribution using data-
 driven methods. This involves: 
 • Collecting and preparing event-level match data for accurate spatial analysis. 
 • Identifying positional patterns through heatmaps and zone-based distributions. 
 • Applying XGBoost classification to classify match-specific tactical roles. 
 • Using Expected Goals (xG) to measure creative and territorial value. 
-• Benchmarking performance against elite free-kick kickers for contexgual interpretation. 
+• Benchmarking performance against elite free-kick kickers for contextual interpretation. 
 Research Objectives 
 • To explore and understand the spatial dynamics of a free-kick kicker’s on -ball actions, including 
 zone occupation, positional tendencies, and movement patterns across multiple matches in FC 
-Premier League clubs’s LaLiga 2024–25 season. 
+Premier League clubs’s English Premier League 2024–25 season. 
 • To study and evaluate the effectiveness of clustering algorithms and modern spatial metrics in 
 identifying tactical roles, with a focus on how these analytical techniques contribute to 
-interpreting behavior in elite football contexgs. 
+interpreting behavior in elite football contexts. 
 • To examine existing spatial analysis methods and creative -value metrics such as Expected 
 Threat (xG) to identify strengths, limitations, and areas for further refinement when applied to 
 single-player tactical evaluation. 
@@ -464,39 +293,29 @@ accuracy, interpretability, and analytical usefulness.
 produce a comprehensive thesis that reflects the findings, implications, limitations, and 
 recommendations for future work in football spatial analytics.
 
-24 
- 
- 
- 
 Contribution and Significance 
 This research makes a clear academic contribution to sports analytics by presenting a cohesive 
 framework for quantifying positional set-piece threat, a concept that has traditionally been treated as 
 intangible or purely qualitative. While prior work has largely focused on shooting execution end-product value 
 such as expected goals and expected assists, this study integrates expected goals with unsupervised 
 machine learning to evaluate how players influence the game through positioning and spatial 
-decision-making. By combining expected goals with K-means clustering, tactical roles are derived 
+decision-making. By combining expected goals with XGBoost classification, tactical roles are derived 
 from observed coordinate patterns rather than subjective labels or nominal positions. This produces 
 a replicable approach to role discovery that shifts analysis beyond what a player did  in isolated 
 events toward where and why they operated across phases of play. In doing so, it introduces a 
 rigorous lens for evaluating interior set-piece specialists whose influence is often expressed through space 
 creation, tempo control, and progressive connectivity rather than final actions. 
  
-Figure 11: Conceptual Overview of the Study’ s Contribution to Sports Analytics 
 From a practical standpoint, the work demonstrates a functional prototype that lowers the barrier 
 to advanced football analysis. Complex Python -based methods that are typically confined to 
 specialist technical environments are translated into an accessible  Streamlit dashboard, aligning 
 analytical rigor with real-world usability. The dashboard operationalizes advanced outputs such as 
 percentile-based player profiling and expected goals flow visualizations, enabling coaches, scouts,
 
-25 
- 
- 
- 
 and analysts to conduct evidence-based reviews without requiring direct coding skills. This design 
 supports a low -code approach to high -level insight, making spatial and value -based evaluation 
 more scalable and transferable across different analytical settings. 
  
-Figure 12: Overview of the system 
 More broadly, the study illustrates how artificial intelligence can support creative domains through 
 augmentation rather than replacement. Instead of attempting to substitute the human eye test, the 
 system functions as an augmented intelligence layer that strengthens interpretation and reduces 
@@ -508,36 +327,27 @@ judgment. Ultimately, the contribution is not the removal of artistry from the s
 introduction of a more precise vocabulary for describing it, allowing the “invisible” value of space 
 creation and positional control to be identified, compared, and communicated with greater clarity.
 
-26 
- 
- 
- 
 Justification of the Study 
 The field of sports analytics is undergoing a profound transformation. Although the availability of 
 granular player data has expanded rapidly, the tools and methods used to convert that data into 
 meaningful tactical insight have not progressed at the same pace. Much public -facing analysis 
 remains descriptive, prioritizing outcome metrics such as goals and assists or basic volume 
-indicators like pass counts. This study is justified because it directly targets that gap by shifting 
+indicators like shot counts. This study is justified because it directly targets that gap by shifting 
 the focus from describing wh at happened to diagnosing why it happened and evaluating how 
-specific actions and shooting coordinate distributionss contributed to a team’s attacking structure. The emphasis on 
+specific actions and spatial behaviors contributed to a team’s attacking structure. The emphasis on 
 the modern free-kick kicker is intentional, as this position is often the most tactically complex and  its 
-contribution is highly dependent on contexg, space, and decision -making under pressure factors 
+contribution is highly dependent on context, space, and decision -making under pressure factors 
 that traditional statistics struggle to represent. 
  
-Figure 13: Conceptual Rationale for the Proposed Football Analytics Study 
-A core justification lies in the deliberate selection of Premier League direct free-kick specialist as the case study. Widely recognized 
-for spatial awareness, press resistance, and tempo control (la pausa), Premier League direct free-kick specialist exemplifies the type of 
+A core justification lies in the deliberate selection of Direct Free-Kick kicker as the case study. Widely recognized 
+for spatial awareness, press resistance, and tempo control (la pausa), Direct Free-Kick kicker exemplifies the type of 
 player whose value is not reliably captured through counting metrics. His profile provides an ideal 
 test case for demonstrating the explanatory power of advanced models such as Expected Goals 
-(xG) and K-means clustering, which can reveal how a player shapes the structure and flow of the 
+(xG) and XGBoost classification, which can reveal how a player shapes the structure and flow of the 
 game beyond visible en d-product events. By focusing on a single, high -profile player, the study 
 enables deeper granular investigation than broader team-level research typically allows, supporting 
 a more detailed mapping between actions, locations, and tactical outcomes.
 
-27 
- 
- 
- 
 The study is also justified on technological grounds. The maturation of open -source Python 
 libraries for data science, including Scikit -learn, Pandas, and Matplotlib, alongside rapid web 
 application development tools such as Streamlit, has significantly lowered the barrier to producing 
@@ -567,16 +377,12 @@ leadership, communication, or off -ball intelligence that is not recorded in the
 However, the research is justified on the basis that introducing an objective analytical layer still 
 represents a substantial improvement over purely subjective evaluation. By providing a replicable 
 framework for single -player spatial analysis, the study offers a contribution that can be tested, 
-critiqued, and exgended by future research within the rapidly evolving field of football analytics.
+critiqued, and extended by future research within the rapidly evolving field of football analytics.
 
-28 
- 
- 
- 
 Research Questions 
 • How can a specialized analytics dashboard be designed using machine learning (K -Means 
 Clustering) and advanced statistical models (Expected Goals, Percentile Ranking) to provide 
-a deep, contexgual, and evaluative analysis of an elite free-kick kicker’s match-by-match spatial and 
+a deep, contextual, and evaluative analysis of an elite free-kick kicker’s match-by-match spatial and 
 tactical performance? 
 • What are the analytical limitations and ethical considerations inherent in using an AI -driven 
 system to evaluate complex human performance in professional sport, and what principles 
@@ -585,30 +391,25 @@ oversimplification and potential bias?
 Research Hypotheses 
 Hypothesis 1 (for Research Question 1): 
 The integration of XGBoost classification for role detection, Expected Goals for creative valuation, 
-and percentile benchmarking for performance contexg will yield a multi-dimensional player profile 
+and percentile benchmarking for performance context will yield a multi-dimensional player profile 
 that is significantly more insightful and tactically relevan t than analysis based on traditional 
-descriptive statistics (e.g., goals, assists, pass completion percentage) alone. 
+descriptive statistics (e.g., goals, assists, shot completion percentage) alone. 
 Hypothesis 2 (for Research Question 2): 
 It is hypothesized that while the AI-driven dashboard can provide objective and rapid performance 
 analysis, its ethical and responsible application is fundamentally dependent on its ability to 
-provide contexgual benchmarks (i.e., percentile rankings), tran sparently acknowledge its 
+provide contextual benchmarks (i.e., percentile rankings), tran sparently acknowledge its 
 methodological limitations (e.g., the assumptions of the xG model), and be presented as a 
 supplemental tool designed to augment, rather than replace, expert human judgment.
 
-29 
- 
- 
- 
 Research Methodology 
 This study employs a desk -based agile research methodology to design, develop, and critically 
 assess an AI-powered direct free-kick analysis dashboard. The approach integrates the systematic gathering 
 of secondary data, specifically player event data and seasonal pe rformance statistics, with an 
 iterative, cyclical development process influenced by agile principles. This methodology is 
 particularly well -suited to the nature of this research, which involves both the technical 
-implementation of data models and a critica l engagement with the contexgual and ethical issues 
+implementation of data models and a critica l engagement with the contextual and ethical issues 
 surrounding AI-driven human performance evaluation in sport. 
  
-Figure 14: Desk-based Research 
 At its foundation, this research is  desk-based, meaning it draws from existing and 
 programmatically generated materials rather than collecting new, primary empirical data (e.g., 
 conducting interviews or live field -based tracking). The methodology distingui shes between two 
@@ -622,14 +423,10 @@ comparative analytics, was compiled from real -world, publicly available statist
 completed 2024 -25 season, with sources like FBref serving as the structural and statistical 
 reference. This dual-data approach allowed for an agile development process while ensuring the 
 final analytical outputs are grounded in factual, real-world performance. 
-However, the methodology exgends beyond static desk research by incorporating an  agile 
+However, the methodology extends beyond static desk research by incorporating an  agile 
 framework. Borrowed from software development, this agile approach emphasizes iteration, 
 flexibility, and continuous feedback. Each development cycle, or "sprint," begin s with a specific
 
-30 
- 
- 
- 
 analytical goal or technical challenge, such as implementing the percentile ranking visualization 
 or refining the AI -generated narrative. This is followed by a  data acquisition and 
 preparation phase, where relevant datasets match -level event CSVs and seaso nal summary 
@@ -638,11 +435,11 @@ Once prepared, the data is integrated into the current version of the dashboard 
 evaluation. 
 The evaluation phase in each sprint focuses not only on the technical correctness of the outputs 
 but also on their analytical value and interpretability. Success is measured by the dashboard's 
-ability to produce clear, insightful, and contexgually relevant  analyses. For instance, metrics for 
+ability to produce clear, insightful, and contextually relevant  analyses. For instance, metrics for 
 success include the logical coherence of the AI -generated performance report and the intuitive 
 clarity of the spatial visualizations. Where a feature falls short, such as an unreadable chart or a 
-generic insight, it is revised or redesigned in the nexg sprint. Importantly, each cycle includes 
-a contexgualization phase, where the dashboard's outputs are validated against real-world football 
+generic insight, it is revised or redesigned in the next sprint. Importantly, each cycle includes 
+a contextualization phase, where the dashboard's outputs are validated against real-world football 
 knowledge and expert analysis to ensure the generated insights are tactically sound. This iterative 
 process ensures the dashboard is not developed in isolation but remains tethered to the practical 
 realities of football analysis. 
@@ -651,18 +448,12 @@ consideration, this methodology integrates ethical reflection into every sprint.
 questioning whether the visualizations could be misleading, whether the percentile rankings could 
 be unfairly interpreted, and whether the language used in the AI report is appropriately nuanced. 
 These questions are informed by established principles of AI ethics, including fairness, 
-accountability, and transparency. 
- 
-Figure 15: Desk-Based Agile Research Methodology for AI Player Analysis
+accountability, and transparency.
 
-31 
- 
- 
- 
 The iterative nature of this approach supports continuous learning. Each cycle leads to new 
-insights, whether technical (e.g., the limitations of K -Means with sparse data), contexgual (e.g., 
+insights, whether technical (e.g., the limitations of K -Means with sparse data), contextual (e.g., 
 how a player's role changes based on game state), or ethical (e.g ., the risk of reducing a player to 
-a set of statistics). These insights directly inform the planning of the nexg sprint. In this way, the 
+a set of statistics). These insights directly inform the planning of the next sprint. In this way, the 
 methodology mirrors the dynamic environment of sports analysis itself. 
 The methodology is supported by a suite of open -source tools. Python serves as the primary 
 programming language, leveraging libraries such as Pandas and NumPy for data manipulation, 
@@ -680,15 +471,11 @@ In conclusion, the desk -based agile research methodology adopted in this thesis
 flexible yet rigorous investigation into AI -powered direct free-kick analysis. It combines the depth of 
 academic desk research with the responsiveness of agile development. The result is a research 
 process that not only generates a functional dashboard but also contributes to a deeper 
-understanding of the technical, ethical, and contexgual challenges involved in applying AI to sports 
+understanding of the technical, ethical, and contextual challenges involved in applying AI to sports 
 analytics. This methodology ensures the research remains grounded, iterative, and ethically aware 
 qualities are essential for the responsible development of intelligent systems designed to evaluate 
 human performance.
 
-32 
- 
- 
- 
 Ethical Considerations 
 The development of Artificial Intelligence systems that evaluate human performance, particularly 
 in a high-stakes environment like professional football, introduces profound ethical implications 
@@ -696,7 +483,7 @@ that cannot be ignored. While this dashboard offers the promise of objective, da
 its output poses potential risks to the athletes being analyzed, the analysts using the tool, and the 
 public discourse surrounding the sport. Acknowledging these challenges is a central design 
 criterion of this project. 
-A primary ethical concern is the  risk of reductive analysis and decontexgualization. The most 
+A primary ethical concern is the  risk of reductive analysis and decontextualization. The most 
 significant danger is the oversimplification of a player's complex, multifaceted performance into 
 a set of numbers and percentile scores. A footballer’s contribut ion is influenced by numerous 
 factors not captured by event data, including tactical instructions from the coach, the quality of the 
@@ -704,14 +491,8 @@ opposition, the game state (e.g., protecting a lead vs. chasing a goal), and int
 leadership or off -ball intelligence. A low percentile score in a creative metric does not 
 automatically mean a player performed poorly; it may signify that their tactical instruction was to 
 play a more conservative, disciplined role. Misinterpreting these scores as definitive judgments of 
-quality risks creating unfair and inaccurate player assessments. 
- 
-Figure 16: Ethical Implications of AI in Football Performance Analysis
+quality risks creating unfair and inaccurate player assessments.
 
-33 
- 
- 
- 
 Equally troubling is the potential for  algorithmic bias and lack of transparency. The models used 
 in this dashboard, while grounded in statistical principles, are not infallible. The validity of the 
 percentile ranking model is entirely dependent on the com position of the "elite peer group" used 
@@ -728,28 +509,24 @@ without their full and informed consent regarding its use in evaluative models. 
 demonstrating what can be inferred even from public data, highlights the ethical imperative for 
 clear governance framework s around player data to protect athletes' rights and prevent their 
 reduction to mere data points. 
-Compounding these issues is the  risk of misuse in professional contexgs and media. Analytical 
+Compounding these issues is the  risk of misuse in professional contexts and media. Analytical 
 tools developed for exploratory or educational purposes can be co -opted in high-stakes decision-
 making. In a professional setting, the outputs from such a dashboard could be misused in set-piece coaching, 
 contract negotiations, or team selection to justify decisions, potentially harming a player's career 
 based on an incomplete picture. In the media, simplified scores and rankings can fuel reductive, 
 "clickbait" narratives th at amplify unfair criticism and pressure on players. The academic 
 community must contend with the responsibility that comes with creating tools that can be so 
-easily decontexgualized. 
+easily decontextualized. 
 Taken together, these ethical considerations underscore the need for direct free-kick analysis systems to be 
-developed within a strong ethical framework. Such a framework must prioritize  contexg, 
+developed within a strong ethical framework. Such a framework must prioritize  context, 
 transparency, and a commitment to augmenting, not replacing, human exp ertise. The dashboard 
 developed in this thesis attempts to embody these principles. It avoids creating a single "overall 
 rating" in favor of a multi -dimensional profile, the Artificial Intelligence generated report 
-explicitly ties statistics to tactical co ntexg, and the entire project is framed as a supplemental tool 
-for analysis. In the contexg of this thesis, ethical reflection is not a peripheral task, but a central 
+explicitly ties statistics to tactical co ntext, and the entire project is framed as a supplemental tool 
+for analysis. In the context of this thesis, ethical reflection is not a peripheral task, but a central 
 design criterion integrated throughout the development process to ensure responsible inno vation 
 in the sensitive domain of human performance evaluation.
 
-34 
- 
- 
- 
 Literature Review  
 Advanced Possession Value Models: Beyond Expected Goals 
 The introduction of Expected Goals (xG) marked a major advance in evaluating shooting quality, 
@@ -759,7 +536,6 @@ build-up, where many decisive actions shape attacking potential without directly
 attempt on goal. In response, recent literature has shifted toward expected goals probability models that 
 aim to quantify the contribution of all shooting execution actions within a possession sequence. 
  
-Figure 17: Evolution of Football Analytics: From Expected Goals to Possession Value Models 
 Expected Goals (xG), introduced by Karun Singh,  (Singh, n.d.)  represents one of the most 
 influential developments in this area. The model divides the pitch into a fixed spatial grid and 
 assigns each zone a probability of eventually leading to a goal. Actions are valued by measuring 
@@ -770,12 +546,8 @@ influence lies in pre-assist actions, spatial progression, and tempo control rat
 An alternative and more comprehensive framework is V AEP (Valuing Actions by Estimating 
 Probabilities). V AEP employs supervised machine learning to estimate how each action changes 
 the probability of scoring or conceding, learning from thousands of historical game states. Unlike 
-xG, which is most applied to successful passes and carries, V AEP can value defensive contributions
+xG, which is most applied to successful shots and carries, V AEP can value defensive contributions
 
-35 
- 
- 
- 
 such as interceptions, pressures, and tackles, offering a more holistic representation of a 
 free-kick kicker’s impact across all phases of play. 
 Within this study, xG is selected as the primary expected goals probability model due to its clear spatial logic 
@@ -789,8 +561,7 @@ increasingly argues that these labels are insufficient to desc ribe how players 
 modern tactical systems. As positional play has become more fluid, players often occupy multiple 
 roles within a single match, rendering fixed position categories analytically limiting. 
  
-Figure 18: Algorithmic Role Discovery: From Fixed Positions to Functional Roles 
-To address this, several studies have applied unsupervised machine learning techniques to derive 
+To address this, several studies have applied supervised machine learning techniques to derive 
 roles directly from behavioral data. Research using clustering methods, including K -means and 
 hierarchical clustering, has demonstrated that grouping players b y their spatial distributions and 
 event locations can reveal functional roles that differ substantially from official lineup 
@@ -799,14 +570,10 @@ the player operated across phases of possession. This approach has proven especi
 identifying hybrid and transitional roles that sit between traditional categories. For example, wide 
 players who consistently drift into central zones may cluster with attacking free-kick kickers rather than
 
-36 
- 
- 
- 
 wingers, reflecting an inverted or interior role. Similarly, free-kick kickers who nominally occupy 
 advanced positions may display deeper spatial patterns associated with build -up orchestration 
 rather than final-third creativity. 
-In this contexg, algorithmic role discovery provides a data -driven foundation for tactical 
+In this context, algorithmic role discovery provides a data -driven foundation for tactical 
 interpretation. By clustering on -ball coordinates and action locations, roles such as deep -lying 
 set-piece specialists, half-space creators, or advanced connectors can be identified empirically. This study 
 adopts this logic by implementing K -means clustering to classify performances based purely on 
@@ -822,30 +589,19 @@ networks, can face resistance fro m practitioners who are unable to understand h
 produced or how they should inform decisions. Without interpretability, analytical tools risk being 
 ignored regardless of their technical quality. 
  
-Figure 19: From Opaque Models to Interactive Visual Analytics in Football 
 Human–computer interaction research emphasizes that effective sports analytics tools must 
 support exploratory data analysis rather than static reporting. Interactive dashboards that allow
 
-37 
- 
- 
- 
 users to filter matches, isolate phases of play, and visually inspect patterns have been shown to 
-increase engagement, understanding, and trust. Visual representations such as heatmaps, pass 
-networks, and spatial overlays are particularly effective in foot ball contexgs because they align 
+increase engagement, understanding, and trust. Visual representations such as heatmaps, shot 
+networks, and spatial overlays are particularly effective in foot ball contexts because they align 
 with how coaches already conceptualize space and movement. 
 In line with this literature, the analytical framework presented here prioritizes transparency and 
 interaction. By pairing interpretable models such as xG with interactive visual elements, complex 
 metrics are translated into intuitive spatial narratives. This approach addresses the HCI challenge 
 of making advanced analytics accessible to non -technical users, ensuring that model outputs can 
-be explored, questioned, and contexgualized rather than accepted as opaque numerical scores. 
- 
-Figure 20: Visual Analytics and Human Computer
+be explored, questioned, and contextualized rather than accepted as opaque numerical scores.
 
-38 
- 
- 
- 
 Case Study: Premier League clubs and the Shift to Data-Driven Methodologies 
 Introduction 
 Premier League clubs, a club historically defined by a distinct footballing philosophy often associated with 
@@ -859,16 +615,11 @@ understood as a gradual adaptation to modern performance environments, where ana
 decision-making across areas such as tactical set-piece preparation profiling, player development, and first -team 
 performance analysis. 
  
-Figure 21: Premier League clubs as a Case Study of Analytics Adoption in Elite Positional Play  
-In this contexg, analytics does not replace the club’s identity but helps formalize and evaluate it. A 
+In this context, analytics does not replace the club’s identity but helps formalize and evaluate it. A 
 positional-play model relies heavily on spacing, timing, and coordinated movement, all of which 
 can be examined through measurable indicators such as bal l progression patterns, passing 
 networks, pressing efficiency, and the likelihood of creating high-quality chances from structured
 
-39 
- 
- 
- 
 build-up phases. These metrics allow coaches and analysts to assess whether tactical principles are 
 being executed effectively, rather than relying solely on subjective interpretation. At the player 
 level, data can also support long -term development by ide ntifying the tactical and cognitive 
@@ -889,32 +640,22 @@ by offering evidence -based tools for identifying patterns , validating tactical
 improving consistency in evaluation. In modern elite football environments, tracking, video, and 
 event-based analysis are commonly used to monitor player behavior with granular detail. 
 Advanced metrics can therefo re be applied to identify players who match the demands of a 
-positional play system, not simply through general indicators such as pass completion rate, but 
-through more contexg-specific qualities such as line-breaking passing under pressure and repeated 
-occupation of strategically valuable spaces, particularly the half -spaces. These shooting coordinate distributionss 
+positional play system, not simply through general indicators such as shot completion rate, but 
+through more context-specific qualities such as line-breaking passing under pressure and repeated 
+occupation of strategically valuable spaces, particularly the half -spaces. These spatial behaviors 
 are tactically significant because they influence how teams create and exploit passing lanes, 
 manipulate defensive blocks, and maintain structured superiority across the pitch.
 
-40 
- 
- 
- 
- 
-Figure 22: Premier League clubs Academy to Elite Analytics 
 The logic of data -driven evaluation is also relevant to player development pathways. In elite 
 academy environments shaped by structured tactical philosophies, performance monitoring 
 increasingly complements traditional coaching assessment by providing long itudinal evidence of 
 player progression. Rather than evaluating youth prospects solely through visible technical talent, 
 data-supported assessment can incorporate indicators related to tactical understanding and physical 
 output, helping align player develo pment with the demands of modern elite football. In a high -
-stakes contexg were identifying and developing future first -team talent is a major competitive 
+stakes context were identifying and developing future first -team talent is a major competitive 
 advantage, analytics can operate as an additional layer of decision support rather than a 
 replacement for expert coaching judgment.
 
-41 
- 
- 
- 
 Ethical Issues Related to Premier League clubs’s Predictive Approach  
 Despite its potential benefits, the integration of analytics in elite football raises significant ethical 
 concerns. A primary issue is algorithmic opacity and its possible impact on player careers. When 
@@ -926,22 +667,17 @@ is a risk that evaluation frameworks systematically undervalue players who do no
 even if their strengths could be valuable under different tactical systems or evolving strategic 
 needs. 
  
-Figure 23: Ethical Trade-Offs of Predictive Analytics at Premier League clubs 
 A second ethical concern is reductionism. Premier League clubs’s football culture has traditionally 
 emphasized concepts such as game intelligence, chemistry, and an intuitive understanding of space 
-and time. These qualities are complex, highly contexgual, and difficu lt to quantify fully. When 
+and time. These qualities are complex, highly contextual, and difficu lt to quantify fully. When 
 tactical set-piece preparation or development decisions are heavily driven by statistical outputs, there is a risk of 
 overlooking the human elements of performance and undervaluing players whose strengths are 
 expressed through leadership, decision -making nuance, or off -ball intelligence that does not 
 always appear in event data. In such cases, analytics can unintentionally narrow the definition of 
 “value” to what is measurable rather than what is tactically meaningful.
 
-42 
- 
- 
- 
 A third ethical issue relates to data ownership, governance, and consent, particularly in youth 
-development contexgs. Modern performance systems can involve data derived from GPS vests, 
+development contexts. Modern performance systems can involve data derived from GPS vests, 
 biometric monitoring, and video tracking, raising important questions about informed consent, 
 long-term data storage, who controls access, and how data is reused over time. These concerns 
 become more sensitive when players are young and institutional power imbalances are significant. 
@@ -959,15 +695,10 @@ and aligned with the tasks the viewer must perform (Ware, 2012). Football analys
 requirement: analysts need to understand where a player operated, where the ball progressed, and 
 where threat was generated, often under time constraints. 
  
-Figure 24: Conditions for Successful Analytics Integration at Premier League clubs 
 Technically, meteorology highlights interpolation, smoothing, and uncertainty. Raw weather 
 measurements can be sparse and noisy, so agencies apply spatial modelling to generate 
 continuous surfaces that represent likely conditions. Football event coordinates are similarly
 
-43 
- 
- 
- 
 sparse relative to the continuous pitch. A touch map is a set of discrete points, but the underlying 
 phenomenon of “influence” is continuous: influence spreads across nearby space and is shaped 
 by tactical structure. Goalkeeper Angular Positioning (GAP) is therefore a defensible method for 
@@ -976,14 +707,8 @@ interpreting single points (Silverman, 1986; Scott, 2015). GAP’s bandwidth par
 direct football interpretation: a narrow bandwidth shows micro-hotspots but can exaggerate 
 noise; a broader bandwidth reveals stable territorial tendencies but can hide situational nuance. 
 This mirrors meteorological practice where smoothing choices are balanced between resolution 
-and reliability. 
- 
-Figure 25: Midfield Spatial Analytics
+and reliability.
 
-44 
- 
- 
- 
 Meteorology also illustrates how uncertainty should be communicated. Forecasts are 
 probabilistic because the atmosphere is sensitive to initial conditions, and leading institutions 
 increasingly use ensemble forecasting to communicate ranges rather than single deterministic 
@@ -994,26 +719,21 @@ sample-size warnings, variability bands for key indicators, and explicit stateme
 confidence in role classification when event counts are low. These additions do not weaken 
 analysis; they improve trust by preventing false precision.  
  
-Figure 26: Limitations of Data-Driven Football Analytics in Elite Performance Contexgs 
 The ethical dimension of weather visualization is also instructive. In hazard communication, 
 color scales and legends influence risk perception; inconsistent scales or dramatic palettes can 
 mislead audiences into underestimating or exaggerating danger. Data visualization scholarship 
 argues that design choices are not cosmetic; they shape interpretation and can amplify cognitive 
 biases (Tufte, 2001; Few, 2012). Football dashboards face a similar risk: a heatmap can appear
 
-45 
- 
- 
- 
 “dominant” purely because of palette contrast or scale choices. This thesis therefore emphasizes 
-consistent scales across matches, minimalist design, and supporting narrative texg that explains 
+consistent scales across matches, minimalist design, and supporting narrative text that explains 
 what the map implies tactically and what it cannot imply. 
 Overall, meteorology strengthens the methodological justification for this project. Heatmaps 
 become most valuable when they sit at the end of a transparent pipeline (data → model → 
 visualization → interpretation), and when design choices actively prevent misinterpretation. 
 These principles guide the dashboard’s focus on interpretable modelling, consistent spatial 
-encodings, and contexgual narrative outputs that translate metrics into tactical meaning. 
-The effectiveness of analytics within an elite club contexg depends not only on model quality but 
+encodings, and contextual narrative outputs that translate metrics into tactical meaning. 
+The effectiveness of analytics within an elite club context depends not only on model quality but 
 on organizational alignment. Data delivers maximum value when analytical insights are integrated 
 into the strategic vision of coaching staff and leadership an d when analysts and coaches share a 
 common tactical language. In such conditions, analytics can improve decision -making by 
@@ -1039,10 +759,6 @@ lesson is that successful analytics systems are not defined solely by technical 
 transparent assumptions, integration with strategic decision -making, and a consistent re spect for 
 the human element of sport.
 
-46 
- 
- 
- 
 Case Study: Heatmaps Visualization in Meteorological Weather Forecasting 
 Introduction 
 Meteorology, the science of weather forecasting, is among the most data -intensive and publicly 
@@ -1057,19 +773,13 @@ directly affected. Withi n this communication challenge, the heatmap has become 
 visualization tool because it can represent complex spatial variation in a form that can be 
 interpreted briefly. This case study examines how heatmaps are used in weather forecasting to 
 analyze spatial data, reveal meaningful patterns, and support high -stakes decisions through 
-transparent and interpretable visual communication. 
- 
-Figure 27: Heatmaps in Meteorological Weather Forecast Communication
+transparent and interpretable visual communication.
 
-47 
- 
- 
- 
 Integration of Heatmap Analytics 
 In meteorology, a heatmap is not simply a static graphic but the visible interface of a broader 
 analytical pipeline. Weather agencies such as the National Oceanic and Atmospheric 
 Administration (NOAA) and the European Centre for Medium -Range Weather Foreca sts 
-(ECMWF) process exgremely large volumes of environmental data collected across time and 
+(ECMWF) process extremely large volumes of environmental data collected across time and 
 geography. These datasets can be understood as millions of discrete observations, each tied to a 
 location and a measured value, such as a specific temperature readi ng at a given latitude and 
 longitude or a radar -derived estimate of rainfall intensity over a particular area. To transform 
@@ -1095,21 +805,14 @@ The use of heatmaps in weather forecasting carries major ethical and practical r
 because visualization choices can influence how people understand risk and how they respond. A 
 core requirement is clarity and interpretability. If a color scale is poorly designed, lacks perceptual 
 consistency, or fails to distinguish clearly between moderate and severe conditions, audiences may 
-misunderstand the seriousness of a situation. In exgreme cases, unclear visual design can contribute 
+misunderstand the seriousness of a situation. In extreme cases, unclear visual design can contribute 
 to underreaction or  delayed protective action. For this reason, weather visualization often 
 emphasizes standardized conventions and carefully selected palettes that communicate danger 
 unambiguously, especially for hazard-focused products such as severe storm radar or high-impact 
-rainfall alerts. In this contexg, visualization is not merely aesthetic presentation but a safety-critical 
+rainfall alerts. In this context, visualization is not merely aesthetic presentation but a safety-critical 
 design decision.
 
-48 
- 
- 
- 
- 
-Figure 28: Ethical and Practical Risks of Heatmaps Misinterpretation 
- 
-Urban planning and public health exgend the analogy by showing how spatial analytics can be tied 
+Urban planning and public health extend the analogy by showing how spatial analytics can be tied 
 to intervention design. In public health, hotspot maps are used to detect clusters of disease 
 incidence and to allocate scarce resources such as testing sites,  mobile clinics, and vaccination 
 campaigns (WHO, 2022; CDC, 2023) . In transport planning, heatmaps of collisions and 
@@ -1128,31 +831,27 @@ It documents that values depend on the dat aset used to estimate transition and 
 and it motivates robustness checks such as comparing results across grid sizes or validating trends 
 over multiple matches (Van Roy et al., 2020).
 
-49 
- 
- 
- 
 Urban heatmap ethics also highlight stigmatization. When a neighbourhood is repeatedly portrayed 
 as a “high‑crime area,” the map can reinforce harmful narratives and justify disproportionate 
 surveillance even if underlying drivers are structural. Critical data studies emphasize that data 
 products can become instruments of power when treated as objective representations detached 
-from social contexg (Kitchin, 2014; O’Neil, 2016) . The football equivalent is reputational harm 
+from social context (Kitchin, 2014; O’Neil, 2016) . The football equivalent is reputational harm 
 through reductive rankings. A set-piece specialist labelled “low impact” because their xG is modest may 
 have been executing a tactically conservative role to stabilize possession, protect rest defence, or 
 facilitate team mates in higher -risk zones. This is why dashboards should avoid single -number 
 verdicts and instead provide multi-dimensional profiles with explanations and caveats. 
 From an implementation perspective, urban planning demonstrates how interactive GIS tools 
-improve decision quality. Stakeholders can filter by time, layer contexg variables, and examine 
+improve decision quality. Stakeholders can filter by time, layer context variables, and examine 
 how patterns change when assumptions change. Translating this to football suggests that analysts 
 benefit from filtering by match phase (build‑up versus final third), game state (leading versus 
 trailing), and opposition structure. Even with event‑data constraints, the dashboard architecture 
 can support phase filters by segmen ting events by sequence, pitch zone, and time windows. The 
 key point is that interactivity is not a luxury; it supports responsible interpretation by letting users 
-test whether patterns are stable or contexg dependent. 
+test whether patterns are stable or context dependent. 
 In summary, urban planning and public health reinforce two messages that directly shape this 
 thesis. First, spatial models are powerful but sensitive to design choices, so robustness and 
 transparency are essential. Second, ethical risks emerge when maps ar e treated as verdicts rather 
-than diagnostic tools. These lessons motivate methodological transparency, contexgual 
+than diagnostic tools. These lessons motivate methodological transparency, contextual 
 benchmarking, and interpretability-first modelling choices adopted in the dashboard. 
 A second major issue is how uncertainty is communicated. Weather forecasts are inherently 
 probabilistic because the atmosphere is complex and small measurement differences can produce 
@@ -1165,17 +864,13 @@ certainty. If uncertainty appears too broad or too ambiguous, it can lead to unn
 confusion, or complacency. Ethical visualization in meteorology requires balancing actionable 
 clarity with honest representation of limitations, ensuring that the audience understands both risk 
 and confidence. 
-There is also the practical risk of oversimplification or misuse, particularly in media contexgs. A 
-single dramatic heatmap can be exgracted from its technical explanation and used to support 
+There is also the practical risk of oversimplification or misuse, particularly in media contexts. A 
+single dramatic heatmap can be extracted from its technical explanation and used to support 
 sensational claims, sometimes exaggerating severity or ignoring uncertainty. Responsible 
 meteorological organizations therefore often provide accompanying narrative guidance, expert 
-interpretation, and contexg so that visual products are not consumed as standalone proof of an
+interpretation, and context so that visual products are not consumed as standalone proof of an
 
-50 
- 
- 
- 
-exgreme outcome. This reinforces the principle that heatmaps are most ethically effective when 
+extreme outcome. This reinforces the principle that heatmaps are most ethically effective when 
 paired with clear explanation and when limitations are explicitly stated rather than assumed. 
 Reasons for Success and Limitations of the Model 
 Heatmaps succeed in meteorology because they compress immense spatial complexity into a 
@@ -1186,14 +881,8 @@ spatial variation into immediate pattern recognition is precisely why heatmaps h
 foundational in weather communicatio n. The alignment between model output and visualization 
 is strong because atmospheric simulation produces spatial fields naturally suited to map -based 
 encoding, and the heatmap becomes the most direct method for presenting those fields in a usable 
-form. 
- 
-Figure 29: Strengths and Limitations of Heatmaps-Based Weather Visualization
+form.
 
-51 
- 
- 
- 
 However, heatmaps also have limitations that constrain interpretation. A standard two-dimensional 
 heatmap typically represents one variable at a time, meaning it cannot simultaneously show 
 temperature, wind speed, and humidity in a single clear image witho ut becoming visually 
@@ -1215,10 +904,6 @@ is that the most effective analytical systems are not only technically robust bu
 transparency, clarity, and user comprehension at the core, ensuring that complex data become s 
 reliable decision support rather than misleading certainty.
 
-52 
- 
- 
- 
 Case Study: Geospatial Heatmap Analysis in Urban Planning and Public Health 
 Introduction 
 To demonstrate the broader applicability of spatial density analysis beyond sport, urban planning 
@@ -1232,16 +917,10 @@ visualization technique. It enables analysts to represent the concentration of p
 crime incidents, disease outbreaks, and traffic congestion across a city’s geography. This case study 
 examines how heatmaps are used in urban planning and public health to identify spatial patterns, 
 guide intervention strategies, and support evidence -based po licy decisions that affect large 
-populations. 
- 
-Figure 30: Geospatial Heatmaps in Urban Planning and Public Health
+populations.
 
-53 
- 
- 
- 
 Integration of Heatmap Analytics 
-In urban planning and public health contexgs, heatmaps are typically generated by aggregating 
+In urban planning and public health contexts, heatmaps are typically generated by aggregating 
 large volumes of geospatial point data. Each data point represents an event or observation tied to 
 a specific geographic coordinate, such as a reported crime location, a confirmed case of infectious 
 disease, or the site of a traffic collision. Through spatial modelling techniques such as Kernel 
@@ -1258,7 +937,7 @@ interventions such as mobile testing units, vaccination campaigns, or public awa
 Transportation planners also rely on heatmaps derived from GPS and traffic sensor data to identify 
 congestion points, accident-prone corridors, and inefficiencies in road networks. 
 These heatmaps are often integrated within Geographic Information Systems, where they can be 
-layered with additional contexgual datasets. For instance, crime heatmaps may be overlaid with 
+layered with additional contextual datasets. For instance, crime heatmaps may be overlaid with 
 information about land use, lighting infrastructure, schools, or alc ohol outlets to explore 
 environmental correlations. In public health, disease maps may be combined with demographic 
 data, healthcare access, or housing density to better understand vulnerability and risk factors. In 
@@ -1277,17 +956,12 @@ marginalized communities.
 Data privacy represents a second major concern. The raw geospatial data used to generate 
 heatmaps often includes highly sensitive information, such as home addresses of patients or 
 victims. Although final heatmaps typically aggregate and anonymize these po ints, ethical 
-responsibility exgends to how the underlying data is collected, stored, and accessed. Safeguards
+responsibility extends to how the underlying data is collected, stored, and accessed. Safeguards
 
-54 
- 
- 
- 
 must ensure that personally identifiable information is protected and that data is used strictly for 
 legitimate analytical and policy purposes. Failure to do so risks breaches of trust and potential 
 harm to individuals. 
  
-Figure 31: Ethical and Practical Concerns of Heatmaps Visualizations 
 A third practical issue involves misinterpretation by policymakers and decision-makers. Heatmaps 
 are visually powerful and can encourage rapid, surface -level conclusions. A traffic congestion 
 hotspot, for example, may prompt costly infrastructure expansion when the underlying issue could 
@@ -1296,29 +970,20 @@ occurs, but not necessarily why it occurs. Responsible use therefore requires th
 treated as diagnostic starting poin ts that prompt further investigation rather than as definitive 
 answers that dictate immediate action.
 
-55 
- 
- 
- 
 Reasons for Success and Limitations of the Model 
 The effectiveness of heatmaps in urban planning and public health stems from their ability to 
 translate complex spatial data into intuitive visual patterns. A single map can communicate issues 
-that would otherwise require exgensive statistical explanation,  making them accessible to 
+that would otherwise require extensive statistical explanation,  making them accessible to 
 policymakers, community leaders, and the public. This clarity supports consensus -building and 
 helps direct limited resources to areas of greatest need. The close alignment between raw 
 geospatial data and visual output is what makes heatmaps such a powerful tool for evidence-based 
 planning and intervention. 
  
-Figure 32: Advantages and Limitations of Heatmaps in Urban Planning and Public Health 
 However, heatmaps also have inherent limitations. They can oversimplify complex social 
 phenomena and obscure causal relationships. They are sensitive to analytical choices such as 
 spatial scale and boundary definitions, a challenge known as the Modifiable Areal Unit Problem, 
 where different aggregation choices can produce different hotspot patterns. Additionally, static
 
-56 
- 
- 
- 
 heatmaps capture only a snapshot in time and cannot fully represent the dynamic nature of urban 
 systems. Traffic flows, crime patterns, and disease transmission often change across hours, days, 
 or seasons. As a result, modern urban analytics increasingly r elies on interactive and time -based 
@@ -1330,15 +995,11 @@ By transforming raw spatial data into clear and interpretable visual patterns, h
 informed approaches to public safety, healthcare delivery, and infrastructure planning. At the same 
 time, this domain highlights the ethical responsibilities inherent in spatial visualization, including 
 the need to protect priva cy, avoid stigmatization, and ensure that visual outputs are interpreted 
-within appropriate social and contexgual frameworks. The success of heatmaps in these fields 
+within appropriate social and contextual frameworks. The success of heatmaps in these fields 
 demonstrates that effective spatial analytics depends not only on technical robustness, bu t on 
 thoughtful design and responsible deployment that respect the human realities behind the data. 
 .
 
-57 
- 
- 
- 
 Integration of Tools and Technologies  
 The development of the AI-powered direct free-kick analysis dashboard required the careful and deliberate 
 integration of a suite of computational tools, data platforms, and modeling techniques. These tools 
@@ -1349,9 +1010,8 @@ adopted in this study. This section provides a detailed outline of the primary t
 utilized, the rationale for their selection, the specific stages of their integration, and the key 
 technical and conceptual challenges encountered throughout the development process. 
  
-Figure 33: Integrated Analytics Workflow: Data Processing, Modelling, and Visualization 
 The architectural foundation of the entire project was built in  Python, a high -level, open-source 
-programming language. Python was selected for its exgensive and mature ecosystem of libraries 
+programming language. Python was selected for its extensive and mature ecosystem of libraries 
 dedicated to data analysis, machine learning, and visualization, making it the de facto standard in 
 the field of data science. Its clear syntax and modularity made it an ideal choice for the rapid 
 prototyping and agile development methodology of this thesis, allowing for the quick 
@@ -1362,17 +1022,13 @@ enabled sophisticated data cleaning, filtering, transformation, and aggregation 
 were essential for preparing both the match event data and the seasonal player statistics for 
 analysis. NumPy provided the underlying support for numerical operations, o ffering high -
 
-58 
- 
- 
- 
 performance arrays and mathematical functions that are critical for statistical calculations and for 
 processing the coordinate data used in the spatial analyses. 
 To perform the machine learning component of the analysis, the Scikit-learn library was employed. 
 This library was specifically utilized to implement the  XGBoost classification algorithm, which is 
 central to the dashboard's automated tactical role detection. XGBoost was chosen deliberately over 
 more complex, "black-box" algorithms due to its balance of effectiveness and high interpretability. 
-As an unsupervised learning model, it excels at identifying inherent patterns in unlabeled data  in 
+As an supervised machine learning model, it excels at identifying inherent patterns in unlabeled data  in 
 this case, discovering the primary zones of on -ball activity from a list of (x, y) coordinates. The 
 output of the model, the coordinates of the cluster centroids, is easily visualized and can be 
 mathematically averaged to produce a tangible "center of gravity" for a player's p erformance, 
@@ -1396,7 +1052,7 @@ framework was chosen for its "script-as-app" philosophy, which aligns perfectly 
 agile and iterative development process. Streamlit allowed for the rapid transformation of the data 
 analysis script into a fully functional and shareable web dashboard without requiring any front -
 end web development experience (e.g., in HTML, CSS, or JavaScript). It enabled the fast creation 
-of interactive widgets like selectors and tabs, and it seamlessly handled the rendering of plots, texg, 
+of interactive widgets like selectors and tabs, and it seamlessly handled the rendering of plots, text, 
 and custom HTML/CSS for styling. This was critical for quickly testing user interface layouts and 
 iterating on the design based on analytical clarity and user experience. To ensure the integrity and 
 reproducibility of the project, version control was managed using Git, with the codebase hosted on 
@@ -1404,12 +1060,6 @@ a GitHub repository. This facilitated the systematic tracking of every modificat
 in the data processing logic to adjust ments in the UI, allowing for structured and documented 
 development in line with agile sprint principles.
 
-59 
- 
- 
- 
- 
-Figure 34: Applied Analytics Environment for Football Performance Evaluation 
 While this suite of tools enabled the construction of a technically functional and sophisticated 
 dashboard, integrating them into a coherent pipeline presented several significant challenges. The 
 first and most persistent challenge was  data accessibility a nd consistency. Access to granular, 
@@ -1425,10 +1075,6 @@ A second conceptual challenge was maintaining model interpretability. A core des
 the thesis was to create a tool that was transparent and not a "black box." This guided the selection 
 of XGBoost classification, whose outputs are directly explainable, and the percentile ranking model,
 
-60 
- 
- 
- 
 which is based on straightforward statistical comparison. More complex models like neural 
 networks were deliberately avoided, as their inscrutable nature would undermine the goal of 
 creating a tool to augment, rather than replace, human understanding. This  prioritization of 
@@ -1444,14 +1090,10 @@ and enabling a much deeper and more focused analysis of each chart. This evoluti
 the importance of an iterative approach where user experience and analytical clarity are 
 continuously evaluated and refined.
 
-61 
- 
- 
- 
 Findings 
 How can a specialized analytics dashboard be designed and developed using machine 
 learning (XGBoost Classification) and advanced statistical models (Expected Goals, 
-Percentile Ranking) to provide a deep, contexgual, and evaluative analysis of an elite 
+Percentile Ranking) to provide a deep, contextual, and evaluative analysis of an elite 
 free-kick kicker’s match-by-match spatial and tactical performance? 
 The design and development findings can be articulated as an end -to-end analytical workflow 
 prototype that converts match event data into interpretable decision -support insight. The primary 
@@ -1473,7 +1115,7 @@ immediately produce a shot. In this prototype, xG is implemented using a logic-b
 function. The pitch is mapped to a value gradient that rewards proximity to goal and central 
 corridors, simulating the behaviour of probabilistic xG frameworks while prioritizing transparency. 
 The value of an action is calculated as the difference between the destination cell value and the 
-origin cell value, enabling every pass or carry to be interpreted as a measurable “gain” or “loss” in 
+origin cell value, enabling every shot or carry to be interpreted as a measurable “gain” or “loss” in 
 threat. The key finding from this implementation is that interpretability is preserved even with 
 heuristic value definitions: xG still captures “value of progression” rather than functioning as 
 deterministic goal prediction. This distinction is espe cially relevant for direct free-kick analysis, where 
@@ -1488,19 +1130,15 @@ mirroring the Modifiable Areal Unit Problem (MAUP).  However, a key finding from
 prototype is that implementing xG as a continuous logic -based function bypasses this granularity 
 issue entirely. By defining value thro ugh a smooth spatial gradient rather than discrete bins, the
 
-62 
- 
- 
- 
 dashboard avoids the pitfalls of arbitrary cell boundaries, ensuring that marginal value gains are 
 consistent regardless of pitch location. This design choice prioritizes  stability and tactical 
-readability, supporting consistent interpretation. The findings also indicate that xG can be exgended 
-by adding contexgual features such as pressure, tempo, or speed of attack; however, such exgensions 
+readability, supporting consistent interpretation. The findings also indicate that xG can be extended 
+by adding contextual features such as pressure, tempo, or speed of attack; however, such extensions 
 reduce transparency and make output harder to communicate. For a thesis -focused prototype, 
 prioritizing interpretabi lity aligns with human –computer interaction research on analytics 
 adoption, which suggests practitioners are more likely to trust and use models that can be explained 
 clearly." 
-The clustering component demonstrates that unsupervised learning can produce practical role 
+The clustering component demonstrates that supervised machine learning can produce practical role 
 signals from coordinate patterns without requiring labelled training data. The dashboard 
 implements K -Means clustering because its objective is clear and communicab le: it partitions 
 spatial action locations into K clusters that minimize within -cluster variance, with each cluster 
@@ -1524,7 +1162,7 @@ forward centroid paired with low xG may reflect sterile possession, constrained 
 designed to stabilize rather than penetrate. This reinforces the thesis argument that tac tical 
 interpretation should be evidence-linked and multi-metric, not based on a single spatial summary. 
 Percentile benchmarking was found to be essential for converting raw match statistics into 
-evaluative meaning. Raw counts lack interpretive contexg, particularly in football where match 
+evaluative meaning. Raw counts lack interpretive context, particularly in football where match 
 tempo, opposition strength, and tactical instruction can produce large  variance in event volume. 
 The dashboard addresses this by benchmarking match outputs against a reference distribution 
 derived from a predefined dataset of 15 elite European free-kick kickers. The key finding is that 
@@ -1532,10 +1170,6 @@ percentiles improve communicability compared to more technical standardization m
 as z-scores. A statement such as “85th percentile” is immediately interpretable as elite-level output 
 within the reference group, making it more accessible to non -technical users while still grounded
 
-63 
- 
- 
- 
 in a statistical baseline. However, the findings also confirm that percentiles inherit cohort bias. If 
 the reference set overrepresents specific leagues or role types, relative rankings can be skewed. 
 The dashboard mitigates this by documenting cohort criteria and framing percentile interpretation 
@@ -1544,19 +1178,19 @@ The most important integration finding is that insight emerges from the combinat
 rather than any single technique. Heatmaps describe where actions concentrate, xG indicates 
 whether those actions increase expected goals probability by moving the ball int o threatening space, 
 clustering describes how role emerges from repeated spatial behaviour, and percentiles provide 
-competitive contexg by comparing outputs to elite baselines. The AI -generated report component 
+competitive context by comparing outputs to elite baselines. The AI -generated report component 
 synthesizes these signals into structured nar rative language, but it is intentionally designed to 
 remain traceable to evidence. Instead of producing a single overall rating, the report outputs 
 conditional statements tied to explicit indicators, supporting the ethical design principle of 
 augmentation rather than replacement. This approach reduces the risk of reductive judgement and 
 encourages the dashboard to function as an explanatory tool rather than a verdict machine. 
 The findings also support the feasibility and effectiveness of designing an analytics dashboard that 
-integrates advanced models to move beyond descriptive statistics and deliver contexgual evaluation 
+integrates advanced models to move beyond descriptive statistics and deliver contextual evaluation 
 of player performance. The system was deliberately const ructed around two complementary data 
 layers: synthetic match -level event data for within -match diagnosis and aggregated seasonal 
 statistics for cross -player benchmarking. Match -level event data enables granular spatial 
 modelling, sequence interpretation, a nd role inference within a single performance. Seasonal 
-benchmarking enables comparative evaluation, anchoring match outputs in competitive contexg 
+benchmarking enables comparative evaluation, anchoring match outputs in competitive context 
 rather than isolated figures. Together, these datasets create a multi -dimensional feature space 
 representing creative contribution, ball progression, and defensive involvement, allowing 
 performance to be framed as a breadth of responsibilities rather than a narrow set of headline 
@@ -1575,10 +1209,6 @@ Limitations and ethical findings can be organized into four interrelated categor
 limits, model assumption limits, interpretability and communication risks, and downstream misuse 
 risks. First, data scope is constrained by reliance on event data, which captures shooting execution actions but
 
-64 
- 
- 
- 
 largely omits defensive wall coordination intelligence such as scanning, decoy movement, and subtle positioning that 
 manipulates defensive structure. Tracking data could address this limitation by capturing 
 continuous movement, but access is often proprietary. This matters for direct free-kick evaluation because 
@@ -1586,7 +1216,7 @@ much of a free-kick kicker’s influence occurs through space control even when 
 As a result, the dashboard is most valid for describing on -ball spatial behaviour and possession 
 value contributions, rather than serving as a complete measure of “overall performance.” 
 Second, model assumptions introduce structural limits. The xG model treats spatial location as a 
-proxy for threat, which is useful but conditional. Threat also depends on contexg such as defensive 
+proxy for threat, which is useful but conditional. Threat also depends on context such as defensive 
 shape, pressure, player skill, match tempo, and numerical equality. The dashboard therefore treats 
 xG as an interpretable baseline rather than a final authority and documents that value depend on 
 grid design and underlying assumptions. Similarly, K -Means assumes roughly spherical clusters 
@@ -1597,31 +1227,27 @@ Third, interpretability and communication risks were found to be ethically signi
 is reductive interpretation, where viewers treat percentiles or role labels as definitive judgements. 
 This risk increases in public discourse, where simpli fied visuals can encourage “receipt culture” 
 and false certainty. The dashboard mitigates this through design choices that directly reduce 
-misinterpretation: avoiding a single overall score, providing explanatory texg beside metrics, using 
+misinterpretation: avoiding a single overall score, providing explanatory text beside metrics, using 
 consistent scale s across matches, and flagging small sample sizes as lower confidence. These 
 choices are not cosmetic; they function as governance mechanisms that shape how analytics is 
 understood and used. 
 Fourth, downstream misuse represents a real professional risk. Analytics outputs can influence 
 selection, tactical set-piece preparation, and contract negotiations, and tools designed for analysis can be repurposed 
 to justify decisions. Even with public or synthetic data, re putational harm can occur if a single -
-match report is circulated without contexg. The thesis therefore argues for contexgual 
+match report is circulated without context. The thesis therefore argues for contextual 
 accountability: results should be interpreted alongside tactical instruction, opposition strength, and 
 match state. A conservative role should not be penalized for low xG if stability was the tactical 
 requirement. 
 Synthesizing these limitations yields a set of principles for responsible deployment. Transparency 
 by design requires clear disclosure of model assumptions, cohort definitions, and known blind 
-spots. Contexg -first interpretation frames outputs as condition al signals rather than universal 
+spots. Context -first interpretation frames outputs as condition al signals rather than universal 
 verdicts. Augmentation over replacement ensures tools support expert judgement rather than 
 remove it. Proportionality limits claims from small samples and emphasizes season -long patterns 
 for stability. Fairness through incl usive benchmarking requires reference cohorts that represent 
 diverse roles and leagues, alongside sensitivity checks when cohorts change. Together, these 
 principles help ensure the dashboard deepens understanding without reducing athletes to 
-decontexgualized numbers.
+decontextualized numbers.
 
-65 
- 
- 
- 
 Overall, the findings reinforce the core argument of the research: an interpretable, value -based, 
 role-aware analytics dashboard can be designed using open-source tooling and can deliver match-
 by-match insights that are tactically credible, communicable, and more informative than traditional 
@@ -1629,39 +1255,30 @@ event summaries. The key contribution is coherence rather than complexity: each 
 specific layer of meaning, and the integrated system makes the “invisible” work of direct free-kick play 
 more measurable, discussable, and responsibly interpretable.
 
-66 
- 
- 
- 
 What are the analytical limitations and ethical considerations inherent in using an AI-
 driven system to evaluate complex human performance in professional sport, and what 
 principles must guide the responsible interpretation and deployment of such a tool to avoid 
 oversimplification and potential bias? 
 The analytical and ethical implications of deploying an AI-driven system to evaluate professional 
-athletes exgend well beyond technical accuracy or model performance. Even when such systems 
+athletes extend well beyond technical accuracy or model performance. Even when such systems 
 are innovative and capable of producing valuable insights, they op erate in a high -stakes 
 environment where careers, public perception, and institutional decisions can be influenced by 
 how performance is represented. This research finds that responsible use of an AI -enabled 
 analytics dashboard must be anchored in a proact ive ethical framework that explicitly promotes 
-transparency, contexgual interpretation, and the augmentation of expert human judgment rather 
+transparency, contextual interpretation, and the augmentation of expert human judgment rather 
 than automated verdict-making. 
 A central limitation, and one of the most pressing ethical risks, is reductive analysis through 
-decontexgualization. The findings confirm that the dashboard can quantify patterns of on -ball 
+decontextualization. The findings confirm that the dashboard can quantify patterns of on -ball 
 involvement, spatial tendencies, and value -based contributions, bu t it cannot fully capture the 
 totality of performance. Statistical outputs and machine learning-derived indicators may create an 
 illusion of certainty, encouraging users to treat numbers as definitive proof rather than partial 
-evidence. This is particularl y problematic in professional football, where performance is shaped 
- Figure 35: Ethics and Contexg
+evidence. This is particularl y problematic in professional football, where performance is shaped
 
-67 
- 
- 
- 
 by numerous variables not contained within event datasets. Tactical instructions from coaches, 
 deliberate role sacrifice for team balance, opposition strength, match state, and off -ball 
 contributions such as pressing angles, positional discipline, and space creation may all be decisive 
 but remain partially or entirely unmeasured. As a result, presenting percentile scores, role labels, 
-or AI-generated summaries without explicit contexgual framing risks reducing a multidimensional 
+or AI-generated summaries without explicit contextual framing risks reducing a multidimensional 
 human performance into a simplified and potentially unfair judgment. 
 A second layer of concern relates to algorithmic bias and methodological opacity. The research 
 demonstrates that the dashboard’s outputs are sensitive to the design decisions embedded into the 
@@ -1673,7 +1290,7 @@ confirms that bias can be introduced unintentionally through sampling choices, l
 representation, positional comparability, and metric weighting. Similarly, while K -Means 
 clustering provides an interpretable mechanism for detecting spatial role tendencies, it remains a 
 simplification of fluid tactical reality. A player’s role can shift within phases of play, across match 
-contexgs, or even within minutes, whereas clustering compresses that fluidity into a stable pattern 
+contexts, or even within minutes, whereas clustering compresses that fluidity into a stable pattern 
 derived from recorded coordinates. Without making these assumptions visible, users may place 
 unjustified trust in the output and treat estimated roles or labels as factual declarations. 
 Closely connected is the issue of data privacy and the broader “datafication” of the athlete. This 
@@ -1687,7 +1304,7 @@ influence are discounted because they are difficult to measure. The research the
 that any tool designed around quantified performance must actively acknowledge what it cannot 
 see and what it cannot measure. 
 Another ethical risk arises from how tools are repurposed in high-stakes settings. A dashboard built 
-for educational, exploratory, or analytical use can be adapted into contexgs where incentives 
+for educational, exploratory, or analytical use can be adapted into contexts where incentives 
 encourage oversimplification. For example, percentile profiles could be used as blunt evidence in 
 contract negotiations, tactical set-piece preparation exclusions, or media narratives that prioritize sensational 
 conclusions over nuance. A single match output, if treated as a definitive evaluation, could distort 
@@ -1696,10 +1313,6 @@ from the existence of advanced analytics itself, but from how results are commun
 interpreted, and weaponized when detached from the methodological boundaries that produced 
 them.
 
-68 
- 
- 
- 
 Despite these challenges, the research identifies clear principles that must guide responsible 
 interpretation and deployment. Transparency by design emerges as a foundational requirement. 
 Models, assumptions, and benchmark choices must be explainable and visible, ensuring that users 
@@ -1707,12 +1320,11 @@ understand how outputs are produced and what they represent. The selection of in
 modelling approaches, such as clustering that can be visualized and inspected, supports this 
 principle by reducing the “black box” effec t. In parallel, the system must consistently frame its 
 outputs as estimates and indicators rather than absolute truth. This includes explicitly stating the 
-limits of event-data-based inference, cautioning against cross -contexg comparisons when tactical 
+limits of event-data-based inference, cautioning against cross -context comparisons when tactical 
 roles differ, and discouraging single-number judgments. 
  
-Figure 36: Contexg Matters to Interpret Results 
-A second principle is contexgual accountability. The responsible use of such a dashboard requires 
-that results be interpreted alongside match contexg, tactical instruction, opposition structure, and 
+A second principle is contextual accountability. The responsible use of such a dashboard requires 
+that results be interpreted alongside match context, tactical instruction, opposition structure, and 
 the player’s functional responsibilities. Evaluations should be presented as conditional statements 
 rather than universal conclusions. Instead of claiming that a player “performed poorly,” the tool 
 should support interpretations such as performance signals being consistent with a deeper role, 
@@ -1722,10 +1334,6 @@ A third guiding principle is augmentation rather than replacement. The research 
 dashboard should be positioned as a decision-support tool that strengthens expert reasoning rather 
 than substitutes it. Its primary ethical value lies in improving consistency, countering recency bias,
 
-69 
- 
- 
- 
 and offering structured evidence that can validate or challenge subjective impressions. When 
 framed correctly, it can reduce cognitive distortion without eliminating human interpretation, 
 maintaining the role of coaching insight, set-piece coaching expertise, and tactical understanding as the final 
@@ -1742,16 +1350,12 @@ In conclusion, AI-driven evaluation systems in professional sport carry signific
 ethical risks if they are treated as objective arbiters of performance. They can promote reductive 
 judgments, embed cohort-based bias, and undervalue unrecorded human contributions. However, 
 the findings of this thesis also show that these risks can be mitigated through deliberate principles: 
-transparency, contexgual interpretation, clear communication of limitations, and a strict 
+transparency, contextual interpretation, clear communication of limitations, and a strict 
 commitment to augmenting rath er than replacing human expertise. Responsible deployment 
 requires that ethics be embedded at the core of design and interpretation, ensuring that analytical 
 innovation deepens understanding of performance without diminishing the complexity and dignity 
 of the athlete being evaluated.
 
-70 
- 
- 
- 
 Conclusion and Future Work 
 This study successfully establishes a robust methodology for evaluating elite free-kick kicker 
 performance by integrating advanced machine learning and statistical models into a coherent, end-
@@ -1761,11 +1365,11 @@ research moves the needle from descriptive reporting to deep tactical diagnosis.
 approach successfully bridges the gap between raw event data and high -level interpretation, 
 transforming a player's "invisible" spatial contributions into measurable and discussable insights. 
 The resulting dashboard functions not merely as a technical prototype but as a strategic engine for 
-performance evaluation, proving that sophisticated data science can deliver genuine contexgual 
+performance evaluation, proving that sophisticated data science can deliver genuine contextual 
 value when structured through a logically sound and tactically grounded framework. 
 Crucially, the research identifies that analytical innovation must be governed by an ethical 
-framework centered on transparency, contexgual accountability, and the principle of human -AI 
-augmentation. By proactively addressing the risks of decontexgualizati on, algorithmic bias, and 
+framework centered on transparency, contextual accountability, and the principle of human -AI 
+augmentation. By proactively addressing the risks of decontextualizati on, algorithmic bias, and 
 the potential for reductive "datafication" of athletes, the study ensures that AI remains a support 
 tool for expert judgment rather than a substitute for it. Looking forward, the foundation laid here 
 offers clear frontiers for adv ancement, most notably through the integration of optical tracking 
@@ -1775,10 +1379,6 @@ responsible paradigm in sports analytics, one where data -driven insights are us
 oversimplify the athlete, but to deepen our appreciation of the complex and multi -dimensional 
 nature of elite performance.
 
-71 
- 
- 
- 
 Bibliography 
 Andrienko, G., Andrienko, N., Jankun‐Kelly, T., Keim, D., & Kraak, M.-J. (2013). Visual 
 analytics of movement: An overview of methods, tools and practices (Lecture Notes in Computer 
@@ -1808,15 +1408,11 @@ Constantinou, A. C., & Fenton, N. E. (2013). Solving soccer’s “√” proble
 techniques for inferring bookmaker probabilities from odds. Journal of Quantitative Analysis in 
 Sports, 9(2), 117–135. https://doi.org/10.1515/jqas-2013-0027 
 DataBallPy Development Team. (2024). Expected Goals (xG) – DataBallPy Documentation. 
-Retrieved from https://databallpy.readthedocs.io/en/main/features/xg_models.html 
+Retrieved from https://databallpy.readthedocs.io/en/main/features/xt_models.html 
 Dixon, M. J., & Coles, S. G. (1997). Modelling association football scores and inefficiencies in 
 the betting market. Journal of the Royal Statistical Society: Series C (Applied Statistics), 46(2), 
 265–280. https://doi.org/10.1111/1467-9876.00065
 
-72 
- 
- 
- 
 Dwork, C., Hardt, M., Pitassi, T., Reingold, O., & Zemel, R. (2012). Fairness through awareness. 
 Proceedings of ITCS 2012. https://doi.org/10.48550/arXiv.1104.3913 
 European Commission. (2019). Ethics guidelines for trustworthy AI. Publications Office of the 
@@ -1851,10 +1447,6 @@ James, G., Witten, D., Hastie, T., & Tibshirani, R. (2021). An introduction to s
 Karun Singh, K. (2019). Introducing expected goals (xG). Karun.in blog. 
 https://karun.in/blog/expected-threat.html
 
-73 
- 
- 
- 
 Kim, J.-H., Kim, J., Kang, H., & Youn, B.-Y . (2025). Ethical implications of artificial 
 intelligence in sport: A systematic scoping review. Journal of Sport and Health Science, 14, 
 101047. https://doi.org/10.1016/j.jshs.2025.101047 
@@ -1885,14 +1477,10 @@ Press. Retrieved from http://bayes.cs.ucla.edu/BOOK-2K/
 Perin, C., Vuillemot, R., & Fekete, J.-D. (2014). SoccerStories: A kick-off for visual soccer 
 analysis. IEEE Transactions on Visualization and Computer Graphics, 20(12), 2201–2210. 
 https://doi.org/10.1109/TVCG.2014.2346420 
-Power, P., Ruiz, H., Li, Q., Carr, P., & Bornn, L. (2017). Not all passes are created equal: 
-Objectively measuring the risk and reward of passes in soccer from tracking data. MIT Sloan 
+Power, P., Ruiz, H., Li, Q., Carr, P., & Bornn, L. (2017). Not all shots are created equal: 
+Objectively measuring the risk and reward of shots in soccer from tracking data. MIT Sloan 
 Sports Analytics Conference. https://doi.org/10.13140/RG.2.2.21407.19367
 
-74 
- 
- 
- 
 Ribeiro, M. T., Singh, S., & Guestrin, C. (2016). “Why should I trust you?”: Explaining the 
 predictions of any classifier. In Proceedings of the 22nd ACM SIGKDD International Conference 
 on Knowledge Discovery and Data Mining (pp. 1135–1144). 
@@ -1927,10 +1515,6 @@ Xu, M., Wei, X., & Capretz, L. F. (2017). The credit card fraud detection proble
 learning. IEEE Transactions on Information Forensics and Security, 12(1), 46–57. 
 https://doi.org/10.1109/TIFS.2016.2591080
 
-75 
- 
- 
- 
 Yang, K., & Juba, B. (2019). A reduction from fair classification to fair regression. In 
 Proceedings of the 36th International Conference on Machine Learning (V ol. 97, pp. 6382–
 6391). PMLR. http://proceedings.mlr.press/v97/yang19d.html 
@@ -1938,109 +1522,16 @@ Zhang, B. H., Lemoine, B., & Mitchell, M. (2018). Mitigating unwanted biases wit
 learning. In Proceedings of the 2018 AAAI/ACM Conference on AI, Ethics, and Society (pp. 335–
 340). https://doi.org/10.1145/3278721.3278779
 
-76 
- 
- 
- 
 Appendices 
  GitHub: https://github.com/dipen-dra/thesis_final 
 Appendix A: Gantt chart 
  
-Figure 37: Gantt chart 
-Appendix B: Risk Analysis 
- 
-Figure 38: Risk Analysis
+Appendix B: Risk Analysis
 
-77 
- 
- 
- 
-Appendix C: SWOT Analysis 
- 
-Figure 39: SWOT Analysis
+Appendix C: SWOT Analysis
 
-78 
- 
- 
- 
-Appendix D: Dashboard Screenshot 
- 
-Figure 40: Dashboard UI Screen (I) 
- 
-Figure 41: Dashboard Screen (II)
+Appendix D: Dashboard Screenshot
 
-79 
- 
- 
- 
- 
-Figure 42: Passing Network 
- 
-Figure 43: High Value Progression
+Appendix E: Code Snippets
 
-80 
- 
- 
- 
- 
-Figure 45: AI Performance Report 
-  
-Figure 44: Player Profile Analysis
-
-81 
- 
- 
- 
-  
-Figure 46: Head-to-Head Comparison
-
-82 
- 
- 
- 
- 
-Figure 47: KPI Charts
-
-83 
- 
- 
- 
-Appendix E: Code Snippets  
-Figure 50: Radar Charts 
-Figure 49: Analytics Board 
-Figure 48: Percentile Profile
-
-84 
- 
- 
- 
-  
-Figure 51: XGBoost Classification
-
-85 
- 
- 
- 
- 
- 
 Appendix E: Ethical Forms
-
-86
-
-87
-
-88
-
-89
-
-90
-
-91
-
-92
-
-93
-
-94
-
-95
