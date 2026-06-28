@@ -1521,45 +1521,48 @@ with tab4:
     ])
     
     with sub_tab1:
-        st.markdown("""
-        ### 📌 Title: 
-        **Design of Data Driven Framework to analyze the decline of Free-Kick goals in Premier League: Machine Learning and Tactical Analysis**
+        st.markdown("### 📖 Full Academic Dissertation Viewer")
+        st.write("Read the complete 18,000-word research dissertation for the EPL Free-Kick Decline Framework.")
         
-        ---
-        
-        ### 📖 Chapter 1: Abstract & Thesis Statement
-        Over the past decade (2014-2024), the frequency of direct free-kick goals in the English Premier League has declined by over 50%. This research designs a data-driven framework utilizing a dataset of **3,657 direct free-kicks** to isolate the variables causing this decline. By training a specialized **XGBoost machine learning model** and employing **SHAP (Shapley Additive exPlanations)**, we demonstrate that the decline is not a regression in player shooting technique, but rather a combination of **defensive tactical optimization (the introduction of the crocodile defender and jumping walls)** and **cleaner defending habits (a 36% decline in fouls conceded in the danger zone)**.
-        
-        ---
-        
-        ### 🛡️ Tactical Evolution: Why Free-Kick Goals Have Declined
-        
-        #### 1. Goalkeeper Positioning & Preparation (Classic vs. Modern)
-        * **The Past (Foil for Kickers):** Traditionally, goalkeepers positioned themselves purely based on basic angle coverage and intuition. They frequently "cheated" or over-committed towards the wall side, assuming the wall would completely cover the near post. Elite kickers like Beckham or Juninho exploited this, easily curling the ball over the wall into the vacated space.
-        * **The Present (Data-Driven Optimization):** Modern goalkeepers and set-piece coaches prepare using high-fidelity spatial data. GKs are mapped against specific kickers' dominant foot, biomechanical cues, and historical target vectors. GKs now stay strictly disciplined in their geometric starting positions, cheats are forbidden, and height/reach profiles in the modern era make covering the upper corners much easier.
-        
-        #### 2. Defensive Wall Coordination & The "Crocodile"
-        * **The Past (Disorganized Barriers):** Historically, defensive walls were loosely coordinated. Players would duck, turn sideways, or split, creating structural gaps that allowed direct shots to pass straight through at chest height.
-        * **The Present (The Double-Barrier Block):** 
-          * *Jumping Walls:* Defending units now jump in synchronized unison, adding an extra 30–40cm to the vertical barrier and cutting off direct trajectories to the top corners.
-          * *The Crocodile Defender:* When walls jump, a gap is exposed along the ground. Shoot-under techniques became highly effective (e.g., Ronaldinho, Messi). To counter this, teams introduced the "crocodile" defender lying down behind the wall. This horizontal block neutralizes low shots, allowing the wall to jump at maximum height with absolute security.
-          
-        #### 3. Systematic Foul Reduction (The Pep Guardiola Effect)
-        * **The Past (Aggressive Challenges):** Low block defending in the 1990s and 2000s relied on slide-tackles and highly physical containment at the edge of the penalty area. This resulted in a large volume of free-kicks in the dangerous 18m–30m shooting zone.
-        * **The Present (Cleaner Spatial Defending):** Modern high-pressing and compact-block systems focus on delaying the attacker, funneling them wide, and defending space. Committing a foul in the danger zone is viewed as a systemic failure. Consequently, DFK attempts in the Premier League dropped by **36%** (from 409 to 262 per season in our dataset).
-        
-        #### 4. Attacking Shot Selection (Expected Goals (xG) Optimization)
-        * **The Past (Shoot on Sight):** Takers took direct shots from almost any distance (even 35m+), resulting in highly spectacular but low-probability attempts.
-        * **The Present (xG Discipline):** With direct DFK conversion rates averaging just **5.5%**, analytical staff actively discourage direct shots from distances greater than 28 meters. Teams prefer crossing or playing short, high-value pass routines to work a higher-xG opportunity into the box.
-        
-        ---
-        
-        ### 🔬 Chapter 2: Methodology
-        - **Data Extraction:** Direct scraping of Understat league databases, filtering for EPL match records from 2014/15 to 2023/24.
-        - **Geometrical Calculations:** Conversion of pitch coordinates to meters (105m x 68m) and calculating the distance and angle relative to the center of the goal line.
-        - **Tactical Feature Augmentation:** Modeling wall sizes, jumping wall actions, goalkeeper positioning, and crocodile defender presence to match actual tactical records.
-        - **Modeling Pipeline:** Training a tuned XGBoost Classifier with class-imbalance weights (`scale_pos_weight`) to optimize the Area Under the ROC Curve (ROC-AUC).
-        """)
+        # Load and parse thesis_230330.txt dynamically
+        thesis_txt_path = "thesis_230330.txt"
+        if os.path.exists(thesis_txt_path):
+            with open(thesis_txt_path, "r", encoding="utf-8") as f:
+                thesis_raw = f.read()
+            
+            # Split sections based on specific headers
+            sections = {}
+            current_sec = "Title Page"
+            current_content = []
+            
+            for line in thesis_raw.split("\n"):
+                stripped = line.strip()
+                # Detect major section headers
+                if stripped.startswith("Chapter") or stripped in [
+                    "Concept Page", "Acknowledgement", "Abstract", "Keywords", 
+                    "Table of Contents", "Bibliography", "Appendices"
+                ]:
+                    if current_content:
+                        sections[current_sec] = "\n".join(current_content)
+                    current_sec = stripped
+                    current_content = []
+                else:
+                    current_content.append(line)
+            if current_content:
+                sections[current_sec] = "\n".join(current_content)
+                
+            selected_section = st.selectbox(
+                "📂 Select Dissertation Chapter / Section", 
+                list(sections.keys()),
+                index=3 # Default to Abstract
+            )
+            
+            # Render selected section in a clean container
+            st.markdown(f"## {selected_section}")
+            st.markdown("---")
+            st.write(sections[selected_section])
+        else:
+            st.error("Dissertation file `thesis_230330.txt` not found in workspace directory.")
         
     with sub_tab2:
         st.markdown("### 🔬 Dissertation Hypothesis Testing & Statistical Validation")
