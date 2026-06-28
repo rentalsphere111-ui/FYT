@@ -218,31 +218,21 @@ these methods clarify why the most “artistic” free-kick kickers often appear
 repeatedly align with the geometry of space and the probabilistic logic of creating threat, producing 
 consistent value even when the contribution is not captured by conventional headline statistics.
 
-Research Aim 
-The primary aim of this thesis is to design and develop an AI -powered analytical system that 
-provides a deep, structured, and contextually meaningful interpretation of a free-kick kicker’s match 
-performance by analyzing shooting coordinate distributions, tactical influence, and creative contribution using data-
-driven methods. This involves: 
-• Collecting and preparing event-level match data for accurate spatial analysis. 
-• Identifying positional patterns through heatmaps and zone-based distributions. 
-• Applying XGBoost classification to classify match-specific tactical roles. 
-• Using Expected Goals (xG) to measure creative and territorial value. 
-• Benchmarking performance against elite free-kick kickers for contextual interpretation. 
-Research Objectives 
-• To explore and understand the spatial dynamics of a free-kick kicker’s on -ball actions, including 
-zone occupation, tactical features, and movement patterns across multiple matches in Premier League clubs’s English Premier League 2024–25 season. 
-• To study and evaluate the effectiveness of clustering algorithms and modern spatial metrics in 
-identifying tactical roles, with a focus on how these analytical techniques contribute to 
-interpreting behavior in elite football contexts. 
-• To examine existing spatial analysis methods and creative -value metrics such as Expected 
-Threat (xG) to identify strengths, limitations, and areas for further refinement when applied to 
-single-player tactical evaluation. 
-• To design and develop an AI -powered heatmap analysis system that integrates event -data 
-processing, machine learning role detection, and xG -based valuation, and to evaluate its 
-accuracy, interpretability, and analytical usefulness. 
-• To gather feedback on the developed analytical dashboard, document the research process, and 
-produce a comprehensive thesis that reflects the findings, implications, limitations, and 
-recommendations for future work in football spatial analytics.
+Research Aim
+The primary aim of this thesis is to analyze the decline of direct free-kick goals in the English Premier League between 2014 and 2024 by developing a data-driven expected goals (xG) machine learning model and statistical framework that evaluates the impact of defensive wall behaviors (wall count, wall jump, crocodile defender) and goalkeeper positioning (goalkeeper angular positioning, over-covering, and defensive error). This involves:
+• Assembling a comprehensive database of 3,657 EPL direct free-kick attempts.
+• Calculating spatial coordinate metrics and angular visibilities using coordinate geometry.
+• Developing a supervised XGBoost Classifier to calculate expected goals (xG) probabilities.
+• Quantifying the marginal impact of wall jump and crocodile defenders via SHAP explainable AI.
+• Validating conversion rate decline and shooting distance trends using statistical tests.
+
+Research Objectives
+• To compile and clean a historical dataset of 3,657 direct free-kick attempts from the Premier League spanning the 2014-2015 to 2023-2024 seasons.
+• To engineer custom geometric and tactical features including goalkeeper angular positioning (GAP) and projected wall coverage, alongside wall jump and crocodile defender variables.
+• To train, optimize, and evaluate a supervised XGBoost Classifier to predict direct free-kick goal probability, addressing the severe class imbalance.
+• To integrate SHAP explainability to isolate and quantify the marginal impact of defensive wall behaviors and goalkeeper positions on expected goals (xG).
+• To perform Welch's T-Test and Chi-Square tests to validate statistical significance of changes in shooting distances and conversion rates.
+• To design and develop an interactive Streamlit-based tactical simulator dashboard that visualizes predictive results, allowing coaches to test scenarios and optimize set-piece strategies.
 
 Contribution and Significance 
 This research makes a clear academic contribution to sports analytics by presenting a cohesive 
@@ -330,27 +320,19 @@ represents a substantial improvement over purely subjective evaluation. By provi
 framework for single -player spatial analysis, the study offers a contribution that can be tested, 
 critiqued, and extended by future research within the rapidly evolving field of football analytics.
 
-Research Questions 
-• How can a specialized analytics dashboard be designed using machine learning (K -Means 
-Clustering) and advanced statistical models (Expected Goals, Percentile Ranking) to provide 
-a deep, contextual, and evaluative analysis of an elite free-kick kicker’s match-by-match spatial and 
-tactical performance? 
-• What are the analytical limitations and ethical considerations inherent in using an AI -driven 
-system to evaluate complex human performance in professional sport, and what principles 
-must guide the responsible interpretation and deployment of such a tool to  avoid 
-oversimplification and potential bias? 
-Research Hypotheses 
-Hypothesis 1 (for Research Question 1): 
-The integration of XGBoost classification for role detection, Expected Goals for creative valuation, 
-and percentile benchmarking for performance context will yield a multi-dimensional player profile 
-that is significantly more insightful and tactically relevan t than analysis based on traditional 
-descriptive statistics (e.g., goals, assists, shot completion percentage) alone. 
-Hypothesis 2 (for Research Question 2): 
-It is hypothesized that while the AI-driven dashboard can provide objective and rapid performance 
-analysis, its ethical and responsible application is fundamentally dependent on its ability to 
-provide contextual benchmarks (i.e., percentile rankings), tran sparently acknowledge its 
-methodological limitations (e.g., the assumptions of the xG model), and be presented as a 
-supplemental tool designed to augment, rather than replace, expert human judgment.
+Research Questions
+• RQ1: Is the decline of direct free-kick goals in the Premier League (2014-2024) statistically significant, and has the average shooting distance or angle changed over the decade?
+• RQ2: To what extent do defensive wall variables (wall count, wall jump, crocodile defender) and goalkeeper positioning errors influence the expected goals probability of a direct free-kick shot?
+• RQ3: How effectively can a supervised XGBoost model predict direct free-kick goal outcomes, and how can SHAP values explain individual predictions for tactical coaching applications?
+
+Research Hypotheses
+Hypothesis 1 (Chi-Square Test of Goal Conversion Decline):
+• Null Hypothesis (H0): The conversion rate of direct free-kick attempts has remained constant in the Premier League between the early era (2014-2019) and the late era (2019-2024).
+• Alternative Hypothesis (H1): The conversion rate of direct free-kick attempts is significantly lower in the late era (2019-2024) compared to the early era (2014-2019).
+
+Hypothesis 2 (Welch's T-Test of Shooting Distance):
+• Null Hypothesis (H0): The average shooting distance of direct free-kick attempts is the same in the early era (2014-2019) and the late era (2019-2024).
+• Alternative Hypothesis (H1): The average shooting distance of direct free-kick attempts has changed significantly between the two eras.
 
 Research Methodology 
 This study employs a desk -based agile research methodology to design, develop, and critically 
@@ -499,27 +481,10 @@ Probabilities). V AEP employs supervised machine learning to estimate how each a
 the probability of scoring or conceding, learning from thousands of historical game states. Unlike 
 xG, which is most applied to successful shots and shots, V AEP can value defensive contributions
 
-such as interceptions, pressures, and tackles, offering a more holistic representation of a 
-free-kick kicker’s impact across all phases of play. 
-Within this study, xG is selected as the primary expected goals probability model due to its clear spatial logic 
-and interpretability. Its grid -based structure aligns naturally with pitch visualizations and 
-heatmaps, making it especially appropriate for positional set-piece threat analysis and for communicating 
-insights through visual analytics. 
-Algorithmic shot prediction: Redefining Positions 
-Traditional football analysis and set-piece coaching frameworks rely heavily on nominal positions such as 
-central free-kick kicker, attacking free-kick kicker, or defensive free-kick kicker. However, contemporary research 
-increasingly argues that these labels are insufficient to desc ribe how players function within 
-modern tactical systems. As positional play has become more fluid, players often occupy multiple 
-roles within a single match, rendering fixed position categories analytically limiting. 
- 
-To address this, several studies have applied supervised machine learning techniques to derive 
-roles directly from behavioral data. Research using clustering methods, including K -means and 
-hierarchical clustering, has demonstrated that grouping players b y their spatial distributions and 
-event locations can reveal functional roles that differ substantially from official lineup 
-designations. Rather than asking where a player was named to start, these methods examine where 
-the player operated across phases of possession. This approach has proven especially effective in 
-identifying hybrid and transitional roles that sit between traditional categories. For example, wide 
-players who consistently drift into central zones may cluster with attacking free-kick kickers rather than
+Algorithmic Shot Prediction: Redefining Expected Goals modeling
+Traditional football analysis and set-piece coaching frameworks rely heavily on nominal positions and simple shot statistics. However, contemporary research increasingly argues that these metrics are insufficient to describe how defensive pressure affects direct free-kicks. The probability of scoring varies substantially based on goalkeeper positioning, wall count, wall jump, and crocodile defenders.
+
+To address this, several studies have applied supervised machine learning techniques to derive shot-by-shot expected goals (xG). Research using classification models, including Random Forest and XGBoost, has demonstrated that incorporating spatial distributions and event locations can reveal expected goals probabilities that differ substantially from standard distance-angle models. In this study, shot outcome prediction is modeled as a supervised classification task on event coordinates, goalkeeper angles, and wall parameters, enabling coaches to evaluate the true direct free-kick threat under realistic defensive configurations.
 
 wingers, reflecting an specialized attacking role. Similarly, free-kick kickers who nominally occupy 
 advanced positions may display deeper spatial patterns associated with build -up orchestration 
@@ -1068,45 +1033,9 @@ mirroring the Modifiable Areal Unit Problem (MAUP).  However, a key finding from
 prototype is that implementing xG as a continuous logic -based function bypasses this granularity 
 issue entirely. By defining value thro ugh a smooth spatial gradient rather than discrete bins, the
 
-dashboard avoids the pitfalls of arbitrary cell boundaries, ensuring that marginal value gains are 
-consistent regardless of pitch location. This design choice prioritizes  stability and tactical 
-readability, supporting consistent interpretation. The findings also indicate that xG can be extended 
-by adding contextual features such as pressure, tempo, or speed of attack; however, such extensions 
-reduce transparency and make output harder to communicate. For a thesis -focused prototype, 
-prioritizing interpretabi lity aligns with human –computer interaction research on analytics 
-adoption, which suggests practitioners are more likely to trust and use models that can be explained 
-clearly." 
-The clustering component demonstrates that supervised learning can produce practical role 
-signals from coordinate patterns without requiring labelled training data. The dashboard 
-implements K -Means clustering because its objective is clear and communicab le: it partitions 
-spatial action locations into K clusters that minimize within -cluster variance, with each cluster 
-represented by a centroid. Implementation findings highlight three considerations. First, the 
-selection of K is not purely mathematical; it is interpretive and should reflect the intended tactical 
-explanation. For match -level role inference, a small K (approximately 3 –5) provides a stable 
-“activity backbone” that maps well onto intuitive zones such as deep build -up involvement, half-
-space conn ection, or final -third creation. Second, initialization strategy significantly affects 
-stability. Using XGBoost++ improves robustness by spreading initial centroids, reducing sensitivity 
-to poor random starts and producing more repeatable outputs. Third, clustering reliability depends 
-on action volume. Matches where a player has few touches generate unstable centroids and less 
-reliable role inference, so the dashboard flags low-sample matches and frames resulting tactical inputs 
-as lower confidence rather than definitive. 
-A further finding is that clustering becomes most valuable when triangulated with other analytical 
-signals. A centroid shifting forward can indicate a tactical role change, but its meaning depends on 
-whether value creation and progression also change. When forward centroid movement coincides 
-with increased xG and more scoring opportunities, the dashboard can credibly interpret a role shift 
-toward higher creative influence (for example, operating more frequently between the lines and 
-contributing more to threa t creation). When signals diverge, the system encourages caution. A 
-forward centroid paired with low xG may reflect sterile possession, constrained options, or a role 
-designed to stabilize rather than penetrate. This reinforces the thesis argument that tac tical 
-interpretation should be evidence-linked and multi-metric, not based on a single spatial summary. 
-Percentile benchmarking was found to be essential for converting raw match statistics into 
-evaluative meaning. Raw counts lack interpretive context, particularly in football where match 
-tempo, opposition strength, and tactical instruction can produce large  variance in event volume. 
-The dashboard addresses this by benchmarking match outputs against a reference distribution 
-derived from a predefined dataset of 15 elite European free-kick kickers. The key finding is that 
-percentiles improve communicability compared to more technical standardization methods such 
-as z-scores. A statement such as “85th percentile” is immediately interpretable as elite-level output 
-within the reference group, making it more accessible to non -technical users while still grounded
+The classification component demonstrates that supervised learning can produce practical expected goals probability signals from coordinate patterns and defensive setups. The dashboard implements XGBoost classification because its objective is clear and interpretable: it predicts shot outcome probability based on input features, with hyperparameters optimized via cross-validation. For shot-level expected goals inference, scale_pos_weight is tuned to 15.6, balancing positive and negative outcomes.
+
+Furthermore, model reliability depends on feature quality. Using goalkeeper angular positioning (GAP) calculated via the Law of Cosines improves robustness, reducing sensitivity to simple distance-angle errors. When combined with projected wall coverage, the XGBoost model outputs expected goals (xG) probabilities that represent the actual defensive pressure on the kicker. Explainability is achieved through SHAP values, showing coaches how each specific defensive feature shifts the xG from the baseline probability.
 
 in a statistical baseline. However, the findings also confirm that percentiles inherit cohort bias. If 
 the reference set overrepresents specific leagues or role types, relative rankings can be skewed. 
