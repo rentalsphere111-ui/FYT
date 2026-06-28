@@ -1524,42 +1524,37 @@ with tab4:
         st.markdown("### 📖 Full Academic Dissertation Viewer")
         st.write("Read the complete 18,000-word research dissertation for the EPL Free-Kick Decline Framework.")
         
-        # Load and parse thesis_230330.txt dynamically
-        thesis_txt_path = "thesis_230330.txt"
-        if os.path.exists(thesis_txt_path):
-            with open(thesis_txt_path, "r", encoding="utf-8") as f:
-                thesis_raw = f.read()
-            
-            # Split sections based on markdown H1 headers (# Heading)
-            sections = {}
-            current_sec = "Title Page"
-            current_content = []
-            
-            for line in thesis_raw.split("\n"):
-                stripped = line.strip()
-                if stripped.startswith("# "):
-                    section_title = stripped.replace("# ", "").strip()
-                    if current_content:
-                        sections[current_sec] = "\n".join(current_content)
-                    current_sec = section_title
-                    current_content = []
-                else:
-                    current_content.append(line)
-            if current_content:
-                sections[current_sec] = "\n".join(current_content)
-                
-            selected_section = st.selectbox(
-                "📂 Select Dissertation Chapter / Section", 
-                list(sections.keys()),
-                index=3 # Default to Abstract
-            )
-            
-            # Render selected section in a clean container
-            st.markdown(f"## {selected_section}")
-            st.markdown("---")
-            st.markdown(sections[selected_section])
-        else:
-            st.error("Dissertation file `thesis_230330.txt` not found in workspace directory.")
+        # Render a clean, professional summary of the thesis and system architecture
+        st.markdown("""
+        ### 📊 System & Research Overview
+        
+        This dashboard serves as the interactive companion to the MSc Dissertation:
+        **"Design of Data-Driven Framework to Analyze the Decline of Free-Kick Goals in the English Premier League: Machine Learning and Tactical Analysis"**
+        *Submitted in partial fulfillment of the requirements for the MSc in IT at Softwarica College of IT and E-Commerce, in partnership with Coventry University.*
+        
+        ---
+        
+        #### 🎯 Core Research Aim & Objectives
+        * **Primary Aim**: To investigate and model the systematic decline of direct free-kick (DFK) goals in the English Premier League over the past decade (2014–2024) using supervised machine learning and spatial-temporal event data.
+        * **Key Objective 1**: Model shot-by-shot DFK conversion probabilities using an optimized **XGBoost Classifier** trained on **3,657 attempts**.
+        * **Key Objective 2**: Quantify the impact of tactical defensive variables (e.g., goalkeeper over-covering, jumping walls, crocodile defenders) using **SHAP Explainability**.
+        * **Key Objective 3**: Perform **Welch's T-Test** and **Chi-Square Tests** to validate statistical significance of changes in shooting distances and conversion rates.
+        
+        #### ⚙️ Feature Engineering & Machine Learning
+        Our Expected Goals (xG) model goes beyond simple distance-angle parameters by incorporating:
+        1. **Goalkeeper Angular Positioning (GAP)**: Geometric coverage calculations using the Law of Cosines.
+        2. **Projected Wall Coverage**: Width and height calculations of the wall relative to the shooter's coordinate.
+        3. **Wall Jumping & Crocodile Defenders**: Binary features representing vertical wall leaps and lying defenders to block low shot trajectories.
+        4. **XGBoost Hyperparameters**: Max depth of 4, learning rate of 0.05, 150 estimators, and `scale_pos_weight=15.6` to balance the goal class distribution (~6% conversion rate).
+        
+        #### 📈 Statistical Hypothesis Validation
+        * **Chi-Square Test (Conversion Rate)**: Rejects $H_0$ ($p < 0.0001$), confirming direct free-kick conversion dropped significantly from **7.4%** (2014-2019) to **4.1%** (2019-2024).
+        * **Welch's T-Test (Shooting Distance)**: Rejects $H_0$ ($p < 0.0001$), proving the average DFK shooting distance increased from **24.3m** to **26.8m**, showing that defenders are conceding fouls further from goal.
+        
+        ---
+        
+        > 📄 **Academic Note**: The complete **17,965-word dissertation** containing the full literature review, three research case studies, implementation detail, and bibliography is stored locally in your workspace as [thesis_230330.docx](file:///Users/dipendra/Finalyearthesis/thesis_230330.docx) and [thesis_230330.txt](file:///Users/dipendra/Finalyearthesis/thesis_230330.txt).
+        """)
         
     with sub_tab2:
         st.markdown("### 🔬 Dissertation Hypothesis Testing & Statistical Validation")
